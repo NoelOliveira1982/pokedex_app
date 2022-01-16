@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex_app/components/badges.dart';
 import 'package:pokedex_app/components/button.dart';
 import 'package:pokedex_app/components/ranger.dart';
 import 'package:pokedex_app/components/search_bar.dart';
@@ -33,11 +34,10 @@ class Home extends StatelessWidget {
               ),
             ),
             const Ranger(),
-            SvgIcon(
-              path: 'types/ghost.svg',
-              isSelected: true,
-              color: AppColors.type['ghost']!,
-            )
+            const Badges(type: 'fairy'),
+            const Badges(type: 'psychic'),
+            const Badges(type: 'dragon'),
+            const Badges(type: 'ice'),
           ],
         ),
       ),

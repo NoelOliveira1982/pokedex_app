@@ -11,7 +11,7 @@ class SvgIcon extends StatelessWidget {
   const SvgIcon({
     Key? key,
     required this.path,
-    required this.color,
+    this.color = AppColors.textWhite,
     this.isSelected = false,
     this.height = 25,
   }) : super(key: key);
