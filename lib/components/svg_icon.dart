@@ -3,24 +3,35 @@ import 'package:flutter_svg/svg.dart';
 import 'package:pokedex_app/styles/colors.dart';
 
 class SvgIcon extends StatelessWidget {
-  late Widget svg;
-  final bool isColored;
+  final Color color;
   final bool isSelected;
+  final String path;
+  final double height;
 
-  SvgIcon({
+  const SvgIcon({
     Key? key,
-    required icon,
-    this.isColored = false,
+    required this.path,
+    required this.color,
     this.isSelected = false,
-  }) : super(key: key) {
-    svg = SvgPicture.asset(
-      icon,
-      color: isColored ? AppColors.type[icon] : AppColors.textWhite,
-    );
-  }
+    this.height = 25,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: isSelected ? 50 : 25,
+      width: isSelected ? 50 : 25,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: isSelected ? color : Colors.transparent,
+      ),
+      child: Center(
+        child: SvgPicture.asset(
+          'assets/images/$path',
+          color: isSelected ? AppColors.textWhite : color,
+          height: height,
+        ),
+      ),
+    );
   }
 }

@@ -118,11 +118,15 @@ mixin AppColors {
   static const Color textGrey = Color.fromRGBO(116, 116, 118, 1);
   static const Color textNumber = Color.fromRGBO(23, 23, 27, 0.6);
 
-  static const Color heightShort = Color.fromRGBO(255, 197, 230, 1);
-  static const Color heightMedium = Color.fromRGBO(174, 191, 215, 1);
-  static const Color heightTall = Color.fromRGBO(170, 172, 184, 1);
+  static const Map<String, Color> height = {
+    'short': Color.fromRGBO(255, 197, 230, 1),
+    'medium': Color.fromRGBO(174, 191, 215, 1),
+    'tall': Color.fromRGBO(170, 172, 184, 1),
+  };
 
-  static const Color weightLight = Color.fromRGBO(153, 205, 124, 1);
-  static const Color weightNormal = Color.fromRGBO(87, 178, 220, 1);
-  static const Color weightHeavy = Color.fromRGBO(90, 146, 165, 1);
+  static const Map<String, Color> weight = {
+    'light': Color.fromRGBO(153, 205, 124, 1),
+    'normal': Color.fromRGBO(87, 178, 220, 1),
+    'heavy': Color.fromRGBO(90, 146, 165, 1),
+  };
 }

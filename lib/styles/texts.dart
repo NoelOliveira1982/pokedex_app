@@ -32,7 +32,11 @@ mixin AppTexts {
   }
 
   static TextStyle description({Color? color}) {
-    return TextStyle(fontSize: 16, color: color ?? Colors.black);
+    return TextStyle(
+      fontSize: 16,
+      color: color ?? Colors.black,
+      fontFamily: 'SfProDisplay',
+    );
   }
 
   static TextStyle pokemonNumber({Color? color}) {

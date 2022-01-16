@@ -16,7 +16,7 @@ class SearchBar extends StatelessWidget {
         filled: true,
         label:
             Text(text, style: AppTexts.description(color: AppColors.textGrey)),
-        prefixIcon: Icon(Icons.search, color: AppColors.textGrey),
+        prefixIcon: const Icon(Icons.search, color: AppColors.textGrey),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
         fillColor: AppColors.backgroundDefaultInput,
       ),
