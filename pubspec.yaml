@@ -65,6 +65,15 @@ flutter:
     - assets/images/patterns/
     - assets/images/types/
     - assets/images/weights/
+    - assets/images/generations/
+    - assets/images/generations/generation1/
+    - assets/images/generations/generation2/
+    - assets/images/generations/generation3/
+    - assets/images/generations/generation4/
+    - assets/images/generations/generation5/
+    - assets/images/generations/generation6/
+    - assets/images/generations/generation7/
+    - assets/images/generations/generation8/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -74,10 +74,11 @@ mixin AppColors {
   );
   static const Gradient gradientPokeballGrey = LinearGradient(
     begin: Alignment.topLeft,
+    stops: [],
     end: Alignment.bottomRight,
     colors: [
-      Color.fromRGBO(236, 236, 236, 1),
-      Color.fromRGBO(245, 245, 245, 1),
+      Color(0xFFECECEC),
+      Color(0xFFF5F5F5),
     ],
   );
   static const Gradient gradientVectorWhite = LinearGradient(
