@@ -1,4 +1,4 @@
-import 'package:pokedex_app/models/encounter/encounter_condition_value.dart';
+import 'package:pokedex_app/models/encounter/condition/encounter_condition_value.dart';
 import 'package:pokedex_app/models/utility/name.dart';
 
 class EncounterCondition {

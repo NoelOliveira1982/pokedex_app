@@ -1,4 +1,4 @@
-import '../utility/stat.dart';
+import '../../utility/stat.dart';
 
 class MoveStatChange {
   final int change;

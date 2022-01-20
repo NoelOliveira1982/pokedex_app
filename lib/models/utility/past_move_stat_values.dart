@@ -1,5 +1,5 @@
 import 'verbose_effect.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 import '../type/type.dart';
 
 class PastMoveStatValues {

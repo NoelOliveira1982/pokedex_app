@@ -1,8 +1,8 @@
-import '../generation/generation.dart';
-import '../move/move_learn_method.dart';
-import '../utility/pokedex.dart';
-import '../utility/region.dart';
-import 'version.dart';
+import '../../generation/generation.dart';
+import '../../move/move_learn_method.dart';
+import '../../utility/pokedex.dart';
+import '../../utility/region.dart';
+import '../version.dart';
 
 class VersionGroup {
   final int id;

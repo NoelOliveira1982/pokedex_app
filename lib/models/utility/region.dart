@@ -2,7 +2,7 @@ import '../generation/generation.dart';
 import '../location/location.dart';
 import 'name.dart';
 import 'pokedex.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 
 class Region {
   final int id;

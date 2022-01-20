@@ -1,6 +1,6 @@
 import '../utility/description.dart';
 import '../utility/name.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 
 class MoveLearnMethod {
   final int id;

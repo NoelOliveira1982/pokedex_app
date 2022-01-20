@@ -1,5 +1,5 @@
 import '../utility/name.dart';
-import '../pokemon/pokemon_species.dart';
+import '../pokemon/species/pokemon_species.dart';
 
 class EvolutionTrigger {
   final int id;

@@ -1,7 +1,7 @@
 import 'package:pokedex_app/models/item/item.dart';
 
 import 'berry_firmness.dart';
-import 'berry_flavor_map.dart';
+import 'flavor/berry_flavor_map.dart';
 import '../type/type.dart';
 
 class Berry {

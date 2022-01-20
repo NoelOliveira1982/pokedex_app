@@ -3,12 +3,12 @@ import '../generation/generation_game_index.dart';
 import 'item_attribute.dart';
 import 'item_category.dart';
 import 'item_fling_effect.dart';
-import 'item_holder_pokemon.dart';
+import 'holder/item_holder_pokemon.dart';
 import 'item_sprites.dart';
 import '../machine/machine_version_detail.dart';
 import '../utility/name.dart';
 import '../utility/verbose_effect.dart';
-import '../version/version_group_flavor_text.dart';
+import '../version/group/version_group_flavor_text.dart';
 
 class Item {
   final int id;

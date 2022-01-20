@@ -2,9 +2,9 @@ import 'package:pokedex_app/models/ability/ability.dart';
 
 import '../move/move.dart';
 import '../utility/name.dart';
-import '../pokemon/pokemon_species.dart';
+import '../pokemon/species/pokemon_species.dart';
 import '../utility/region.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 import '../type/type.dart';
 
 class Generation {

@@ -1,5 +1,5 @@
 import 'machine.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 
 class MachineVersionDetail {
   final Machine machine;

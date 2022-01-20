@@ -1,5 +1,5 @@
 import '../utility/name.dart';
-import 'version_group.dart';
+import 'group/version_group.dart';
 
 class Version {
   final int id;

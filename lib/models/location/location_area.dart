@@ -1,4 +1,4 @@
-import 'package:pokedex_app/models/encounter/encounter_method_rate.dart';
+import 'package:pokedex_app/models/encounter/method/encounter_method_rate.dart';
 
 import 'location.dart';
 import '../utility/name.dart';

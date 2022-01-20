@@ -1,8 +1,8 @@
-import '../utility/name.dart';
-import 'pokemon.dart';
+import '../../utility/name.dart';
+import '../pokemon.dart';
 import 'pokemon_form_sprites.dart';
 import 'pokemon_form_type.dart';
-import '../version/version_group.dart';
+import '../../version/group/version_group.dart';
 
 class PokemonForm {
   final int id;

@@ -1,4 +1,4 @@
-import '../utility/pokedex.dart';
+import '../../utility/pokedex.dart';
 
 class PokemonSpeciesDexEntry {
   final int entryNumber;

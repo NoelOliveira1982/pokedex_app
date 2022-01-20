@@ -1,4 +1,4 @@
-import '../version/version.dart';
+import '../../version/version.dart';
 
 class PokemonHeldItemVersion {
   final Version version;

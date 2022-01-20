@@ -4,8 +4,8 @@ import '../move/move.dart';
 import '../move/move_damage_class.dart';
 import '../utility/name.dart';
 import 'type_pokemon.dart';
-import 'type_relations.dart';
-import 'type_relations_past.dart';
+import 'relations/type_relations.dart';
+import 'relations/type_relations_past.dart';
 
 class Type {
   final int id;

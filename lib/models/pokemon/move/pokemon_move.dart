@@ -1,4 +1,4 @@
-import '../move/move.dart';
+import '../../move/move.dart';
 import 'pokemon_move_version.dart';
 
 class PokemonMove {

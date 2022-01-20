@@ -1,15 +1,15 @@
-import '../utility/description.dart';
-import '../utility/egg_group.dart';
-import '../evolution/evolution_chain.dart';
-import '../flavor/flavor_text.dart';
-import '../generation/generation.dart';
-import '../utility/genus.dart';
-import '../growth/growth_rate.dart';
-import '../utility/name.dart';
-import '../pal_park/pal_park_encounter_area.dart';
-import 'pokemon_color.dart';
-import 'pokemon_habitat.dart';
-import 'pokemon_shape.dart';
+import '../../utility/description.dart';
+import '../../utility/egg_group.dart';
+import '../../evolution/evolution_chain.dart';
+import '../../flavor/flavor_text.dart';
+import '../../generation/generation.dart';
+import '../../utility/genus.dart';
+import '../../growth/growth_rate.dart';
+import '../../utility/name.dart';
+import '../../pal_park/encounter/pal_park_encounter_area.dart';
+import '../pokemon_color.dart';
+import '../pokemon_habitat.dart';
+import '../pokemon_shape.dart';
 import 'pokemon_species_dex_entry.dart';
 import 'pokemon_species_variety.dart';
 

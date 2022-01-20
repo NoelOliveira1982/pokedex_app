@@ -1,6 +1,6 @@
 import '../utility/awesome_name.dart';
 import '../utility/name.dart';
-import 'pokemon_species.dart';
+import 'species/pokemon_species.dart';
 
 class PokemonShape {
   final int id;

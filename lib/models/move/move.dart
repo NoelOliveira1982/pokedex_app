@@ -1,5 +1,5 @@
 import 'package:pokedex_app/models/ability/ability_effect_change.dart';
-import 'package:pokedex_app/models/contest/contest_combo_sets.dart';
+import 'package:pokedex_app/models/contest/combo/contest_combo_sets.dart';
 import 'package:pokedex_app/models/contest/contest_effect.dart';
 import 'package:pokedex_app/models/contest/contest_type.dart';
 
@@ -8,7 +8,7 @@ import '../machine/machine_version_detail.dart';
 import 'move_damage_class.dart';
 import 'move_flavor_text.dart';
 import 'move_meta_data.dart';
-import 'move_stat_change.dart';
+import 'stat/move_stat_change.dart';
 import 'move_target.dart';
 import '../utility/name.dart';
 import '../utility/past_move_stat_values.dart';

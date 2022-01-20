@@ -1,4 +1,4 @@
-import '../version/version.dart';
+import '../../version/version.dart';
 
 class ItemHolderPokemonVersionDetail {
   final int rarity;

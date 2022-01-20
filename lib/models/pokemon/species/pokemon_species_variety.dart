@@ -1,4 +1,4 @@
-import 'pokemon.dart';
+import '../pokemon.dart';
 
 class PokemonSpeciesVariety {
   final bool isDefault;

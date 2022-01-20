@@ -1,4 +1,4 @@
-import '../generation/generation.dart';
+import '../../generation/generation.dart';
 import 'pokemon_type.dart';
 
 class PokemonTypePast {

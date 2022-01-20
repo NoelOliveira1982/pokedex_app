@@ -1,5 +1,5 @@
 import '../utility/name.dart';
-import 'pokemon_species.dart';
+import 'species/pokemon_species.dart';
 
 class PokemonHabitat {
   final int id;

@@ -1,5 +1,5 @@
 import '../utility/name.dart';
-import 'pal_park_encounter_species.dart';
+import 'encounter/pal_park_encounter_species.dart';
 
 class PalParkArea {
   final int id;

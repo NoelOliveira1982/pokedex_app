@@ -1,4 +1,4 @@
-import 'package:pokedex_app/models/encounter/encounter_method.dart';
+import 'package:pokedex_app/models/encounter/method/encounter_method.dart';
 import 'package:pokedex_app/models/encounter/encounter_version_details.dart';
 
 class EncounterMethodRate {

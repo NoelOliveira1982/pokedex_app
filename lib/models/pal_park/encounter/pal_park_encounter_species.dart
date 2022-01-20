@@ -1,4 +1,4 @@
-import '../pokemon/pokemon_species.dart';
+import '../../pokemon/species/pokemon_species.dart';
 
 class PalParkEncounterSpecies {
   final int baseScore;

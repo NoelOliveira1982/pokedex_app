@@ -1,4 +1,4 @@
-import 'pal_park_area.dart';
+import '../pal_park_area.dart';
 
 class PalParkEncounterArea {
   final int baseScore;

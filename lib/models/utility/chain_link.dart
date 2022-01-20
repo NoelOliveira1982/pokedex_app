@@ -1,5 +1,5 @@
 import '../evolution/evolution_detail.dart';
-import '../pokemon/pokemon_species.dart';
+import '../pokemon/species/pokemon_species.dart';
 
 class ChainLink {
   final bool isBaby;

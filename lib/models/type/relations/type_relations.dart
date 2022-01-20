@@ -1,4 +1,4 @@
-import 'type.dart';
+import '../type.dart';
 
 class TypeRelations {
   final List<Type> noDamageTo;

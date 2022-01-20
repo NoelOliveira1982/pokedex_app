@@ -1,4 +1,4 @@
-import '../generation/generation.dart';
+import '../../generation/generation.dart';
 import 'type_relations.dart';
 
 class TypeRelationsPast {

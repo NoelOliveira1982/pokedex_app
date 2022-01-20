@@ -1,4 +1,4 @@
-import '../type/type.dart';
+import '../../type/type.dart';
 
 class PokemonType {
   final int slot;

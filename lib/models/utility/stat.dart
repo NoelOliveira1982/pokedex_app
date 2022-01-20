@@ -2,7 +2,7 @@ import 'package:pokedex_app/models/nature/nature_stat_affect_sets.dart';
 
 import 'characteristic.dart';
 import '../move/move_damage_class.dart';
-import '../move/move_stat_affect_sets.dart';
+import '../move/stat/affect/move_stat_affect_sets.dart';
 import 'name.dart';
 
 class Stat {

@@ -1,4 +1,4 @@
-import '../utility/language.dart';
+import '../../utility/language.dart';
 import 'version_group.dart';
 
 class VersionGroupFlavorText {

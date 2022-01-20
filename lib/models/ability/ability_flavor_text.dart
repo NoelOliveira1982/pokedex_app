@@ -1,5 +1,5 @@
 import 'package:pokedex_app/models/utility/language.dart';
-import 'package:pokedex_app/models/version/version_group.dart';
+import 'package:pokedex_app/models/version/group/version_group.dart';
 
 class AbilityFlavorText {
   final String flavorText;

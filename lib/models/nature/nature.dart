@@ -1,6 +1,6 @@
-import 'package:pokedex_app/models/berry/berry_flavor.dart';
+import 'package:pokedex_app/models/berry/flavor/berry_flavor.dart';
 
-import '../move/move_battle_style_preference.dart';
+import '../move/battle_style/move_battle_style_preference.dart';
 import '../utility/name.dart';
 import 'natural_stat_change.dart';
 import '../utility/stat.dart';

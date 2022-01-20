@@ -1,12 +1,12 @@
-import 'pokemon_form.dart';
-import 'pokemon_held_item.dart';
-import 'pokemon_move.dart';
+import 'form/pokemon_form.dart';
+import 'held_item/pokemon_held_item.dart';
+import 'move/pokemon_move.dart';
 import 'pokemon_sprites.dart';
 import 'pokemon_stat.dart';
-import 'pokemon_type.dart';
+import 'type/pokemon_type.dart';
 import 'pokemon_ability.dart';
-import 'pokemon_species.dart';
-import 'pokemon_type_past.dart';
+import 'species/pokemon_species.dart';
+import 'type/pokemon_type_past.dart';
 import '../version/version_game_index.dart';
 
 class Pokemon {

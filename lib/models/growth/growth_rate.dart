@@ -1,6 +1,6 @@
 import '../utility/description.dart';
 import 'growth_rate_experience_level.dart';
-import '../pokemon/pokemon_species.dart';
+import '../pokemon/species/pokemon_species.dart';
 
 class GrowthRate {
   final int id;

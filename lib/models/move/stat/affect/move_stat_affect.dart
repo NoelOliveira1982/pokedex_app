@@ -1,4 +1,4 @@
-import 'move.dart';
+import '../../move.dart';
 
 class MoveStatAffect {
   final int change;

@@ -1,4 +1,4 @@
-import 'nature.dart';
+import '../nature.dart';
 
 class NaturePokeathlonStatAffect {
   final int maxChange;

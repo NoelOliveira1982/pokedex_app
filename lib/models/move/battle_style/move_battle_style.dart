@@ -1,4 +1,4 @@
-import '../utility/name.dart';
+import '../../utility/name.dart';
 
 class MoveBattleStyle {
   final int id;

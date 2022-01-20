@@ -1,6 +1,6 @@
 import '../item/item.dart';
 import '../move/move.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 
 class Machine {
   final int id;

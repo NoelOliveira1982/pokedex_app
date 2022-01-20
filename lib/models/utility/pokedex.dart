@@ -2,7 +2,7 @@ import 'description.dart';
 import 'name.dart';
 import '../pokemon/pokemon_entry.dart';
 import 'region.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 
 class Pokedex {
   final int id;

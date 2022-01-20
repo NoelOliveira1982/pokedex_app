@@ -1,5 +1,5 @@
 import 'name.dart';
-import '../pokemon/pokemon_species.dart';
+import '../pokemon/species/pokemon_species.dart';
 
 class EggGroup {
   final int id;

@@ -1,5 +1,5 @@
 import '../utility/language.dart';
-import '../version/version_group.dart';
+import '../version/group/version_group.dart';
 
 class MoveFlavorText {
   final String flavorText;

@@ -1,4 +1,4 @@
-import '../item/item.dart';
+import '../../item/item.dart';
 import 'pokemon_held_item_version.dart';
 
 class PokemonHeldItem {

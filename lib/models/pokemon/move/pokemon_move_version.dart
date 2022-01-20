@@ -1,5 +1,5 @@
-import '../move/move_learn_method.dart';
-import '../version/version_group.dart';
+import '../../move/move_learn_method.dart';
+import '../../version/group/version_group.dart';
 
 class PokemonMoveVersion {
   final MoveLearnMethod moveLearnMethod;
