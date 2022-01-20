@@ -1,12 +1,19 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex_app/models/ability/ability.dart';
 
 import '../move/move.dart';
-import '../utility/name.dart';
+import '../utility/name/name.dart';
 import '../pokemon/species/pokemon_species.dart';
-import '../utility/region.dart';
+import '../utility/region/region.dart';
 import '../version/group/version_group.dart';
 import '../type/type.dart';
 
+part 'generation.g.dart';
+
+@JsonSerializable(
+  fieldRename: FieldRename.snake,
+  explicitToJson: true,
+)
 class Generation {
   final int id;
   final String name;
@@ -18,14 +25,20 @@ class Generation {
   final List<Type> types;
   final List<VersionGroup> versionGroups;
 
-  Generation(
-      {required this.id,
-      required this.name,
-      required this.abilities,
-      required this.names,
-      required this.mainRegion,
-      required this.moves,
-      required this.pokemonSpecies,
-      required this.types,
-      required this.versionGroups});
+  Generation({
+    required this.id,
+    required this.name,
+    required this.abilities,
+    required this.names,
+    required this.mainRegion,
+    required this.moves,
+    required this.pokemonSpecies,
+    required this.types,
+    required this.versionGroups,
+  });
+
+  factory Generation.fromJson(Map<String, dynamic> json) =>
+      _$GenerationFromJson(json);
+
+  Map<String, dynamic> toJson() => _$GenerationToJson(this);
 }

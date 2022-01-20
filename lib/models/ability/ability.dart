@@ -1,11 +1,18 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex_app/models/generation/generation.dart';
-import 'package:pokedex_app/models/utility/name.dart';
-import 'package:pokedex_app/models/utility/verbose_effect.dart';
+import 'package:pokedex_app/models/utility/name/name.dart';
+import 'package:pokedex_app/models/utility/verbose_effect/verbose_effect.dart';
 
-import 'ability_effect_change.dart';
-import 'ability_flavor_text.dart';
-import 'ability_pokemon.dart';
+import 'ability_effect_change/ability_effect_change.dart';
+import 'ability_flavor_text/ability_flavor_text.dart';
+import 'ability_pokemon/ability_pokemon.dart';
 
+part 'ability.g.dart';
+
+@JsonSerializable(
+  fieldRename: FieldRename.snake,
+  explicitToJson: true,
+)
 class Ability {
   final int id;
   final String name;
@@ -28,4 +35,9 @@ class Ability {
     required this.flavorTextEntries,
     required this.pokemon,
   });
+
+  factory Ability.fromJson(Map<String, dynamic> json) =>
+      _$AbilityFromJson(json);
+
+  Map<String, dynamic> toJson() => _$AbilityToJson(this);
 }
