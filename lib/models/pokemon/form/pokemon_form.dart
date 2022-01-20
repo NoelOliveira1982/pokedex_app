@@ -1,9 +1,17 @@
-import '../../utility/name.dart';
+import 'package:json_annotation/json_annotation.dart';
+
+import '../../utility/name/name.dart';
 import '../pokemon.dart';
-import 'pokemon_form_sprites.dart';
-import 'pokemon_form_type.dart';
+import 'pokemon_form_sprites/pokemon_form_sprites.dart';
+import 'pokemon_form_type/pokemon_form_type.dart';
 import '../../version/group/version_group.dart';
 
+part 'pokemon_form.g.dart';
+
+@JsonSerializable(
+  fieldRename: FieldRename.snake,
+  explicitToJson: true,
+)
 class PokemonForm {
   final int id;
   final String name;
@@ -36,4 +44,9 @@ class PokemonForm {
     required this.names,
     required this.formNames,
   });
+
+  factory PokemonForm.fromJson(Map<String, dynamic> json) =>
+      _$PokemonFormFromJson(json);
+
+  Map<String, dynamic> toJson() => _$PokemonFormToJson(this);
 }

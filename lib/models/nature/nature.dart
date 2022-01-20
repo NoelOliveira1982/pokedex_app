@@ -1,10 +1,17 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex_app/models/berry/flavor/berry_flavor.dart';
+import 'package:pokedex_app/models/move/battle_style/move_battle_style_preference/move_battle_style_preference.dart';
+import 'package:pokedex_app/models/utility/name/name.dart';
+import 'package:pokedex_app/models/utility/stat/stat.dart';
 
-import '../move/battle_style/move_battle_style_preference.dart';
-import '../utility/name.dart';
-import 'natural_stat_change.dart';
-import '../utility/stat.dart';
+import '../utility/natural/natural_stat_change.dart';
 
+part 'nature.g.dart';
+
+@JsonSerializable(
+  fieldRename: FieldRename.snake,
+  explicitToJson: true,
+)
 class Nature {
   final int id;
   final String name;
@@ -27,4 +34,8 @@ class Nature {
     required this.moveBattleStylePreferences,
     required this.names,
   });
+
+  factory Nature.fromJson(Map<String, dynamic> json) => _$NatureFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NatureToJson(this);
 }

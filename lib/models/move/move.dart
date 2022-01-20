@@ -1,22 +1,29 @@
-import 'package:pokedex_app/models/ability/ability_effect_change.dart';
-import 'package:pokedex_app/models/contest/combo/contest_combo_sets.dart';
-import 'package:pokedex_app/models/contest/contest_effect.dart';
-import 'package:pokedex_app/models/contest/contest_type.dart';
+import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/ability/ability_effect_change/ability_effect_change.dart';
+import 'package:pokedex_app/models/contest/combo/contest_combo_sets/contest_combo_sets.dart';
+import 'package:pokedex_app/models/contest/contest_effect/contest_effect.dart';
+import 'package:pokedex_app/models/contest/contest_type/contest_type.dart';
 
 import '../generation/generation.dart';
-import '../machine/machine_version_detail.dart';
-import 'move_damage_class.dart';
-import 'move_flavor_text.dart';
-import 'move_meta_data.dart';
-import 'stat/move_stat_change.dart';
-import 'move_target.dart';
-import '../utility/name.dart';
-import '../utility/past_move_stat_values.dart';
+import '../machine/machine_version_detail/machine_version_detail.dart';
+import 'move_damage_class/move_damage_class.dart';
+import 'move_flavor_text/move_flavor_text.dart';
+import 'move_meta_data/move_meta_data.dart';
+import 'stat/move_stat_change/move_stat_change.dart';
+import 'move_target/move_target.dart';
+import '../utility/name/name.dart';
+import '../utility/past_move_stat_values/past_move_stat_values.dart';
 import '../pokemon/pokemon.dart';
 import '../type/type.dart';
-import '../utility/super_contest_effect.dart';
-import '../utility/verbose_effect.dart';
+import '../utility/super_contest_effect/super_contest_effect.dart';
+import '../utility/verbose_effect/verbose_effect.dart';
 
+part 'move.g.dart';
+
+@JsonSerializable(
+  fieldRename: FieldRename.snake,
+  explicitToJson: true,
+)
 class Move {
   final int id;
   final String name;
@@ -43,29 +50,34 @@ class Move {
   final MoveTarget target;
   final Type type;
 
-  Move(
-      {required this.id,
-      required this.name,
-      required this.accuracy,
-      required this.effectChange,
-      required this.pp,
-      required this.priority,
-      required this.power,
-      required this.contesCombos,
-      required this.contestType,
-      required this.contestEffect,
-      required this.damageClass,
-      required this.effectEntries,
-      required this.effectChanges,
-      required this.learnedByPokemon,
-      required this.flavorTextEntries,
-      required this.generation,
-      required this.machines,
-      required this.meta,
-      required this.names,
-      required this.pastValues,
-      required this.statsChange,
-      required this.superContestEffect,
-      required this.target,
-      required this.type});
+  Move({
+    required this.id,
+    required this.name,
+    required this.accuracy,
+    required this.effectChange,
+    required this.pp,
+    required this.priority,
+    required this.power,
+    required this.contesCombos,
+    required this.contestType,
+    required this.contestEffect,
+    required this.damageClass,
+    required this.effectEntries,
+    required this.effectChanges,
+    required this.learnedByPokemon,
+    required this.flavorTextEntries,
+    required this.generation,
+    required this.machines,
+    required this.meta,
+    required this.names,
+    required this.pastValues,
+    required this.statsChange,
+    required this.superContestEffect,
+    required this.target,
+    required this.type,
+  });
+
+  factory Move.fromJson(Map<String, dynamic> json) => _$MoveFromJson(json);
+
+  Map<String, dynamic> toJson() => _$MoveToJson(this);
 }
