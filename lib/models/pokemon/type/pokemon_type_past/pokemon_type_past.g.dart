@@ -9,7 +9,7 @@ part of 'pokemon_type_past.dart';
 PokemonTypePast _$PokemonTypePastFromJson(Map<String, dynamic> json) =>
     PokemonTypePast(
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       types: (json['types'] as List<dynamic>)
           .map((e) => PokemonType.fromJson(e as Map<String, dynamic>))
           .toList(),

@@ -8,7 +8,8 @@ part of 'effect.dart';
 
 Effect _$EffectFromJson(Map<String, dynamic> json) => Effect(
       effect: json['effect'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$EffectToJson(Effect instance) => <String, dynamic>{

@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../language/language.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'effect.g.dart';
 
@@ -10,7 +9,7 @@ part 'effect.g.dart';
 )
 class Effect {
   final String effect;
-  final Language language;
+  final NamedAPIResource language;
 
   Effect({
     required this.effect,

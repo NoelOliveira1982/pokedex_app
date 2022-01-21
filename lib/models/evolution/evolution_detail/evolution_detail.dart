@@ -1,11 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../evolution_trigger/evolution_trigger.dart';
-import '../../item/item.dart';
-import '../../location/location.dart';
-import '../../move/move.dart';
-import '../../pokemon/species/pokemon_species.dart';
-import '../../type/type.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'evolution_detail.g.dart';
 
@@ -14,23 +8,23 @@ part 'evolution_detail.g.dart';
   explicitToJson: true,
 )
 class EvolutionDetail {
-  final Item item;
-  final EvolutionTrigger trigger;
+  final NamedAPIResource item;
+  final NamedAPIResource trigger;
   final int gender;
-  final Item heldItem;
-  final Move knownMove;
-  final Type knownMoveType;
-  final Location location;
+  final NamedAPIResource heldItem;
+  final NamedAPIResource knownMove;
+  final NamedAPIResource knownMoveType;
+  final NamedAPIResource location;
   final int minLevel;
   final int minHappiness;
   final int minBeauty;
   final int minAffection;
   final bool needsOverworldRain;
-  final PokemonSpecies partySpecies;
-  final Type partyType;
+  final NamedAPIResource partySpecies;
+  final NamedAPIResource partyType;
   final int relativePhysicalStats;
   final String timeOfDay;
-  final PokemonSpecies tradeSpecies;
+  final NamedAPIResource tradeSpecies;
   final bool turnUpsideDown;
 
   EvolutionDetail({

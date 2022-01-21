@@ -11,7 +11,7 @@ PalParkEncounterSpecies _$PalParkEncounterSpeciesFromJson(
     PalParkEncounterSpecies(
       baseScore: json['base_score'] as int,
       rate: json['rate'] as int,
-      pokemonSpecies: PokemonSpecies.fromJson(
+      pokemonSpecies: NamedAPIResource.fromJson(
           json['pokemon_species'] as Map<String, dynamic>),
     );
 

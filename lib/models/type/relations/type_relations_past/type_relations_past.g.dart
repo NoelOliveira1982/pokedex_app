@@ -9,7 +9,7 @@ part of 'type_relations_past.dart';
 TypeRelationsPast _$TypeRelationsPastFromJson(Map<String, dynamic> json) =>
     TypeRelationsPast(
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       damageRelations: TypeRelations.fromJson(
           json['damage_relations'] as Map<String, dynamic>),
     );

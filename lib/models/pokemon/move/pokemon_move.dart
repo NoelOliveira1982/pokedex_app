@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../../move/move.dart';
 import 'pokemon_move_version/pokemon_move_version.dart';
 
 part 'pokemon_move.g.dart';
@@ -10,7 +10,7 @@ part 'pokemon_move.g.dart';
   explicitToJson: true,
 )
 class PokemonMove {
-  final Move move;
+  final NamedAPIResource move;
   final List<PokemonMoveVersion> versionGroupDetails;
 
   PokemonMove({

@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../utility/stat/stat.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_stat.g.dart';
 
@@ -9,7 +8,7 @@ part 'pokemon_stat.g.dart';
   explicitToJson: true,
 )
 class PokemonStat {
-  final Stat stat;
+  final NamedAPIResource stat;
   final int effort;
   final int baseStat;
 

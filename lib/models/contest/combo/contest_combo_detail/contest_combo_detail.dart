@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/move/move.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'contest_combo_detail.g.dart';
 
@@ -8,8 +8,8 @@ part 'contest_combo_detail.g.dart';
   explicitToJson: true,
 )
 class ContestComboDetail {
-  final List<Move> useBefore;
-  final List<Move> useAfter;
+  final List<NamedAPIResource> useBefore;
+  final List<NamedAPIResource> useAfter;
 
   ContestComboDetail({
     required this.useBefore,

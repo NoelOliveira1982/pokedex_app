@@ -15,12 +15,13 @@ PokemonForm _$PokemonFormFromJson(Map<String, dynamic> json) => PokemonForm(
       isBattleOnly: json['is_battle_only'] as bool,
       isMega: json['is_mega'] as bool,
       formName: json['form_name'] as String,
-      pokemon: Pokemon.fromJson(json['pokemon'] as Map<String, dynamic>),
-      types: PokemonFormType.fromJson(json['types'] as Map<String, dynamic>),
+      pokemon:
+          NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
+      types: NamedAPIResource.fromJson(json['types'] as Map<String, dynamic>),
       sprites:
           PokemonFormSprites.fromJson(json['sprites'] as Map<String, dynamic>),
-      versionGroup:
-          VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      versionGroup: NamedAPIResource.fromJson(
+          json['version_group'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

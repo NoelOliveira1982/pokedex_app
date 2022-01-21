@@ -9,10 +9,10 @@ part of 'contest_combo_detail.dart';
 ContestComboDetail _$ContestComboDetailFromJson(Map<String, dynamic> json) =>
     ContestComboDetail(
       useBefore: (json['use_before'] as List<dynamic>)
-          .map((e) => Move.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       useAfter: (json['use_after'] as List<dynamic>)
-          .map((e) => Move.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

@@ -10,7 +10,8 @@ PokemonSpeciesDexEntry _$PokemonSpeciesDexEntryFromJson(
         Map<String, dynamic> json) =>
     PokemonSpeciesDexEntry(
       entryNumber: json['entry_number'] as int,
-      pokedex: Pokedex.fromJson(json['pokedex'] as Map<String, dynamic>),
+      pokedex:
+          NamedAPIResource.fromJson(json['pokedex'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$PokemonSpeciesDexEntryToJson(

@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../../item/item.dart';
 import 'pokemon_held_item_version/pokemon_held_item_version.dart';
 
 part 'pokemon_held_item.g.dart';
@@ -10,7 +10,7 @@ part 'pokemon_held_item.g.dart';
   explicitToJson: true,
 )
 class PokemonHeldItem {
-  final Item item;
+  final NamedAPIResource item;
   final PokemonHeldItemVersion versionDetails;
 
   PokemonHeldItem({

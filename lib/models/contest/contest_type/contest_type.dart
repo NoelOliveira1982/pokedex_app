@@ -1,5 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/utility/language/language.dart';
+import 'package:pokedex_app/models/contest/contest_name/contest_name.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'contest_type.g.dart';
 
@@ -8,18 +9,20 @@ part 'contest_type.g.dart';
   explicitToJson: true,
 )
 class ContestType {
+  final int id;
   final String name;
-  final String color;
-  final Language language;
-
-  ContestType({
-    required this.name,
-    required this.color,
-    required this.language,
-  });
+  final NamedAPIResource berryFlavor;
+  final List<ContestName> names;
 
   factory ContestType.fromJson(Map<String, dynamic> json) =>
       _$ContestTypeFromJson(json);
+
+  ContestType({
+    required this.id,
+    required this.name,
+    required this.berryFlavor,
+    required this.names,
+  });
 
   Map<String, dynamic> toJson() => _$ContestTypeToJson(this);
 }

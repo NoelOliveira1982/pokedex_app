@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../move_battle_style.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'move_battle_style_preference.g.dart';
 
@@ -11,7 +10,7 @@ part 'move_battle_style_preference.g.dart';
 class MoveBattleStylePreference {
   final int lowHpPreference;
   final int highHpPreference;
-  final MoveBattleStyle moveBattleStyle;
+  final NamedAPIResource moveBattleStyle;
 
   MoveBattleStylePreference({
     required this.lowHpPreference,

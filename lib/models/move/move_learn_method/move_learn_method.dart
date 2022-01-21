@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/description/description.dart';
 import '../../utility/name/name.dart';
-import '../../version/group/version_group.dart';
 
 part 'move_learn_method.g.dart';
 
@@ -15,7 +15,7 @@ class MoveLearnMethod {
   final String name;
   final Description descriptions;
   final List<Name> names;
-  final List<VersionGroup> versionGroups;
+  final List<NamedAPIResource> versionGroups;
 
   MoveLearnMethod({
     required this.id,

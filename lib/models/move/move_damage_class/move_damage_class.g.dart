@@ -14,7 +14,7 @@ MoveDamageClass _$MoveDamageClassFromJson(Map<String, dynamic> json) =>
           .map((e) => Description.fromJson(e as Map<String, dynamic>))
           .toList(),
       moves: (json['moves'] as List<dynamic>)
-          .map((e) => Move.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))

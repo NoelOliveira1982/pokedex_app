@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/awesome_name/awesome_name.dart';
 import '../../utility/name/name.dart';
-import '../species/pokemon_species.dart';
 
 part 'pokemon_shape.g.dart';
 
@@ -15,7 +15,7 @@ class PokemonShape {
   final String name;
   final List<AwesomeName> awesomeNames;
   final List<Name> names;
-  final List<PokemonSpecies> pokemonSpecies;
+  final List<NamedAPIResource> pokemonSpecies;
 
   PokemonShape({
     required this.id,

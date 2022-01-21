@@ -11,7 +11,7 @@ PalParkEncounterArea _$PalParkEncounterAreaFromJson(
     PalParkEncounterArea(
       baseScore: json['base_score'] as int,
       rate: json['rate'] as int,
-      area: PalParkArea.fromJson(json['area'] as Map<String, dynamic>),
+      area: NamedAPIResource.fromJson(json['area'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$PalParkEncounterAreaToJson(

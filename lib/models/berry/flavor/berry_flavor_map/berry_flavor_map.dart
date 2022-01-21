@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../berry_flavor.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'berry_flavor_map.g.dart';
 
@@ -10,7 +9,7 @@ part 'berry_flavor_map.g.dart';
 )
 class BerryFlavorMap {
   final int potency;
-  final BerryFlavor flavor;
+  final NamedAPIResource flavor;
 
   BerryFlavorMap({
     required this.potency,

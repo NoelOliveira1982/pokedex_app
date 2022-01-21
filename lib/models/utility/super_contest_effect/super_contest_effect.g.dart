@@ -14,7 +14,7 @@ SuperContestEffect _$SuperContestEffectFromJson(Map<String, dynamic> json) =>
           .map((e) => FlavorText.fromJson(e as Map<String, dynamic>))
           .toList(),
       moves: (json['moves'] as List<dynamic>)
-          .map((e) => Move.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

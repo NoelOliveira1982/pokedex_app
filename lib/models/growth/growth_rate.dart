@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../utility/description/description.dart';
 import 'growth_rate_experience_level/growth_rate_experience_level.dart';
-import '../pokemon/species/pokemon_species.dart';
 
 part 'growth_rate.g.dart';
 
@@ -16,7 +16,7 @@ class GrowthRate {
   final String formula;
   final List<Description> descriptions;
   final List<GrowthRateExperienceLevel> levels;
-  final List<PokemonSpecies> pokemonSpecies;
+  final List<NamedAPIResource> pokemonSpecies;
 
   GrowthRate({
     required this.id,

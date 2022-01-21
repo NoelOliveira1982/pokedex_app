@@ -1,10 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../description/description.dart';
 import '../name/name.dart';
 import '../../pokemon/pokemon_entry/pokemon_entry.dart';
-import '../region/region.dart';
-import '../../version/group/version_group.dart';
 
 part 'pokedex.g.dart';
 
@@ -19,8 +18,8 @@ class Pokedex {
   final List<Description> descriptions;
   final List<Name> names;
   final List<PokemonEntry> pokemonEntries;
-  final Region region;
-  final VersionGroup versionGroup;
+  final NamedAPIResource region;
+  final List<NamedAPIResource> versionGroup;
 
   Pokedex(
     this.id,

@@ -11,14 +11,14 @@ Pokemon _$PokemonFromJson(Map<String, dynamic> json) => Pokemon(
       name: json['name'] as String,
       baseExperience: json['base_experience'] as int,
       height: json['height'] as int,
-      isDefualt: json['is_defualt'] as bool,
+      isDefault: json['is_default'] as bool,
       order: json['order'] as int,
       weight: json['weight'] as int,
       abilities: (json['abilities'] as List<dynamic>)
           .map((e) => PokemonAbility.fromJson(e as Map<String, dynamic>))
           .toList(),
       forms: (json['forms'] as List<dynamic>)
-          .map((e) => PokemonForm.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       gameIndices: (json['game_indices'] as List<dynamic>)
           .map((e) => VersionGameIndex.fromJson(e as Map<String, dynamic>))
@@ -34,7 +34,8 @@ Pokemon _$PokemonFromJson(Map<String, dynamic> json) => Pokemon(
           .map((e) => PokemonTypePast.fromJson(e as Map<String, dynamic>))
           .toList(),
       sprites: PokemonSprites.fromJson(json['sprites'] as Map<String, dynamic>),
-      species: PokemonSpecies.fromJson(json['species'] as Map<String, dynamic>),
+      species:
+          NamedAPIResource.fromJson(json['species'] as Map<String, dynamic>),
       stats: (json['stats'] as List<dynamic>)
           .map((e) => PokemonStat.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -48,7 +49,7 @@ Map<String, dynamic> _$PokemonToJson(Pokemon instance) => <String, dynamic>{
       'name': instance.name,
       'base_experience': instance.baseExperience,
       'height': instance.height,
-      'is_defualt': instance.isDefualt,
+      'is_default': instance.isDefault,
       'order': instance.order,
       'weight': instance.weight,
       'abilities': instance.abilities.map((e) => e.toJson()).toList(),

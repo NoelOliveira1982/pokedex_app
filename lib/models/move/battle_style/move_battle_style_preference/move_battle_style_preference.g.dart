@@ -11,7 +11,7 @@ MoveBattleStylePreference _$MoveBattleStylePreferenceFromJson(
     MoveBattleStylePreference(
       lowHpPreference: json['low_hp_preference'] as int,
       highHpPreference: json['high_hp_preference'] as int,
-      moveBattleStyle: MoveBattleStyle.fromJson(
+      moveBattleStyle: NamedAPIResource.fromJson(
           json['move_battle_style'] as Map<String, dynamic>),
     );
 

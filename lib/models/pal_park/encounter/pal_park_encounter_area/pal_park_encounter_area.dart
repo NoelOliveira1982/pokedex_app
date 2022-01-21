@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../pal_park_area.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pal_park_encounter_area.g.dart';
 
@@ -11,7 +10,7 @@ part 'pal_park_encounter_area.g.dart';
 class PalParkEncounterArea {
   final int baseScore;
   final int rate;
-  final PalParkArea area;
+  final NamedAPIResource area;
 
   PalParkEncounterArea({
     required this.baseScore,

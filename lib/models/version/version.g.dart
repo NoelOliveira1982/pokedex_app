@@ -12,8 +12,8 @@ Version _$VersionFromJson(Map<String, dynamic> json) => Version(
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      versionGroup:
-          VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      versionGroup: NamedAPIResource.fromJson(
+          json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$VersionToJson(Version instance) => <String, dynamic>{

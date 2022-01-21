@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../language/language.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'awesome_name.g.dart';
 
@@ -10,7 +9,7 @@ part 'awesome_name.g.dart';
 )
 class AwesomeName {
   final String awesomeName;
-  final Language language;
+  final NamedAPIResource language;
 
   AwesomeName({
     required this.awesomeName,

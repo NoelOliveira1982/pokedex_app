@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../move.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'move_stat_affect.g.dart';
 
@@ -10,7 +9,7 @@ part 'move_stat_affect.g.dart';
 )
 class MoveStatAffect {
   final int change;
-  final Move move;
+  final NamedAPIResource move;
 
   MoveStatAffect({
     required this.change,

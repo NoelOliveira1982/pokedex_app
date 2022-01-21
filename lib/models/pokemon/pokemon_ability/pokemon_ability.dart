@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/ability/ability.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_ability.g.dart';
 
@@ -10,7 +10,7 @@ part 'pokemon_ability.g.dart';
 class PokemonAbility {
   final bool isHidden;
   final int slot;
-  final Ability ability;
+  final NamedAPIResource ability;
 
   PokemonAbility({
     required this.isHidden,

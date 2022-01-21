@@ -1,10 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/name/name.dart';
-import '../pokemon.dart';
 import 'pokemon_form_sprites/pokemon_form_sprites.dart';
-import 'pokemon_form_type/pokemon_form_type.dart';
-import '../../version/group/version_group.dart';
 
 part 'pokemon_form.g.dart';
 
@@ -21,10 +19,10 @@ class PokemonForm {
   final bool isBattleOnly;
   final bool isMega;
   final String formName;
-  final Pokemon pokemon;
-  final PokemonFormType types;
+  final NamedAPIResource pokemon;
+  final NamedAPIResource types;
   final PokemonFormSprites sprites;
-  final VersionGroup versionGroup;
+  final NamedAPIResource versionGroup;
   final List<Name> names;
   final List<Name> formNames;
 

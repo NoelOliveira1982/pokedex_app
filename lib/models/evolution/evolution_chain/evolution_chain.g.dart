@@ -9,8 +9,8 @@ part of 'evolution_chain.dart';
 EvolutionChain _$EvolutionChainFromJson(Map<String, dynamic> json) =>
     EvolutionChain(
       id: json['id'] as int,
-      babyTriggerItem:
-          Item.fromJson(json['baby_trigger_item'] as Map<String, dynamic>),
+      babyTriggerItem: NamedAPIResource.fromJson(
+          json['baby_trigger_item'] as Map<String, dynamic>),
       chain: ChainLink.fromJson(json['chain'] as Map<String, dynamic>),
     );
 

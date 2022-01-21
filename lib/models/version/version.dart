@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../utility/name/name.dart';
-import 'group/version_group.dart';
 
 part 'version.g.dart';
 
@@ -13,7 +13,7 @@ class Version {
   final int id;
   final String name;
   final List<Name> names;
-  final VersionGroup versionGroup;
+  final NamedAPIResource versionGroup;
 
   Version({
     required this.id,

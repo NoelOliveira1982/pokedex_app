@@ -9,7 +9,7 @@ part of 'location.dart';
 Location _$LocationFromJson(Map<String, dynamic> json) => Location(
       id: json['id'] as int,
       name: json['name'] as String,
-      region: Region.fromJson(json['region'] as Map<String, dynamic>),
+      region: NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -17,7 +17,7 @@ Location _$LocationFromJson(Map<String, dynamic> json) => Location(
           .map((e) => GenerationGameIndex.fromJson(e as Map<String, dynamic>))
           .toList(),
       areas: (json['areas'] as List<dynamic>)
-          .map((e) => LocationArea.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

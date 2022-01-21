@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../pokemon.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_species_variety.g.dart';
 
@@ -10,7 +9,7 @@ part 'pokemon_species_variety.g.dart';
 )
 class PokemonSpeciesVariety {
   final bool isDefault;
-  final Pokemon pokemon;
+  final NamedAPIResource pokemon;
 
   PokemonSpeciesVariety({
     required this.isDefault,

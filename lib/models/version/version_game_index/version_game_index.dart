@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../version.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'version_game_index.g.dart';
 
@@ -10,7 +9,7 @@ part 'version_game_index.g.dart';
 )
 class VersionGameIndex {
   final int gameIndex;
-  final Version version;
+  final NamedAPIResource version;
 
   VersionGameIndex({
     required this.gameIndex,

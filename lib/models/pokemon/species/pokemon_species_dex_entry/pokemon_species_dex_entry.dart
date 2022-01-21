@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../../utility/pokedex/pokedex.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_species_dex_entry.g.dart';
 
@@ -10,7 +9,7 @@ part 'pokemon_species_dex_entry.g.dart';
 )
 class PokemonSpeciesDexEntry {
   final int entryNumber;
-  final Pokedex pokedex;
+  final NamedAPIResource pokedex;
 
   PokemonSpeciesDexEntry({
     required this.entryNumber,

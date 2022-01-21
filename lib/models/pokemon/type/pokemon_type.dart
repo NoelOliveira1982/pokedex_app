@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../type/type.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_type.g.dart';
 
@@ -10,7 +9,7 @@ part 'pokemon_type.g.dart';
 )
 class PokemonType {
   final int slot;
-  final Type type;
+  final NamedAPIResource type;
 
   PokemonType({
     required this.slot,

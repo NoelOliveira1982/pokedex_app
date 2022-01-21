@@ -1,9 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../generation/generation.dart';
 import '../generation/generation_game_index/generation_game_index.dart';
-import '../move/move.dart';
-import '../move/move_damage_class/move_damage_class.dart';
 import '../utility/name/name.dart';
 import 'type_pokemon/type_pokemon.dart';
 import 'relations/type_relations.dart';
@@ -21,11 +19,11 @@ class Type {
   final TypeRelations damageRelations;
   final List<TypeRelationsPast> pastDamageRelations;
   final List<GenerationGameIndex> gameIndices;
-  final Generation generation;
-  final MoveDamageClass moveDamageClass;
+  final NamedAPIResource generation;
+  final NamedAPIResource moveDamageClass;
   final List<Name> names;
   final List<TypePokemon> pokemon;
-  final List<Move> moves;
+  final List<NamedAPIResource> moves;
 
   Type({
     required this.id,

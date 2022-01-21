@@ -16,13 +16,13 @@ Berry _$BerryFromJson(Map<String, dynamic> json) => Berry(
       smoothness: json['smoothness'] as int,
       soilDryness: json['soil_dryness'] as int,
       firmness:
-          BerryFirmness.fromJson(json['firmness'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['firmness'] as Map<String, dynamic>),
       flavors: (json['flavors'] as List<dynamic>)
           .map((e) => BerryFlavorMap.fromJson(e as Map<String, dynamic>))
           .toList(),
-      item: Item.fromJson(json['item'] as Map<String, dynamic>),
-      naturalGiftType:
-          Type.fromJson(json['natural_gift_type'] as Map<String, dynamic>),
+      item: NamedAPIResource.fromJson(json['item'] as Map<String, dynamic>),
+      naturalGiftType: NamedAPIResource.fromJson(
+          json['natural_gift_type'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$BerryToJson(Berry instance) => <String, dynamic>{

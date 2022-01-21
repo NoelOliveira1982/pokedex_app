@@ -10,7 +10,7 @@ NaturePokeathlonStatAffect _$NaturePokeathlonStatAffectFromJson(
         Map<String, dynamic> json) =>
     NaturePokeathlonStatAffect(
       maxChange: json['max_change'] as int,
-      nature: Nature.fromJson(json['nature'] as Map<String, dynamic>),
+      nature: NamedAPIResource.fromJson(json['nature'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$NaturePokeathlonStatAffectToJson(

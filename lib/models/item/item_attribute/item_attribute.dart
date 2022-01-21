@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/description/description.dart';
-import '../item.dart';
 import '../../utility/name/name.dart';
 
 part 'item_attribute.g.dart';
@@ -13,7 +13,7 @@ part 'item_attribute.g.dart';
 class ItemAttribute {
   final int id;
   final String name;
-  final List<Item> items;
+  final List<NamedAPIResource> items;
   final List<Name> names;
   final List<Description> descriptions;
 

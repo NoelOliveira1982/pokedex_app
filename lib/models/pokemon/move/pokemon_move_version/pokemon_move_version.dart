@@ -1,7 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../../move/move_learn_method/move_learn_method.dart';
-import '../../../version/group/version_group.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_move_version.g.dart';
 
@@ -10,8 +8,8 @@ part 'pokemon_move_version.g.dart';
   explicitToJson: true,
 )
 class PokemonMoveVersion {
-  final MoveLearnMethod moveLearnMethod;
-  final VersionGroup versionGroup;
+  final NamedAPIResource moveLearnMethod;
+  final NamedAPIResource versionGroup;
   final int levelLearnedAt;
 
   PokemonMoveVersion({

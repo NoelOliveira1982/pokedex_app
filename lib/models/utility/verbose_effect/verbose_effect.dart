@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/utility/language/language.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'verbose_effect.g.dart';
 
@@ -10,7 +10,7 @@ part 'verbose_effect.g.dart';
 class VerboseEffect {
   final String effect;
   final String shortEffect;
-  final Language language;
+  final NamedAPIResource language;
 
   VerboseEffect({
     required this.effect,

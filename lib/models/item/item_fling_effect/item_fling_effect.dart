@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/effect/effect.dart';
-import '../item.dart';
 
 part 'item_fling_effect.g.dart';
 
@@ -13,7 +13,7 @@ class ItemFlingEffect {
   final int id;
   final String name;
   final List<Effect> effectEntries;
-  final List<Item> items;
+  final List<NamedAPIResource> items;
 
   ItemFlingEffect({
     required this.id,

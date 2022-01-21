@@ -10,7 +10,8 @@ AbilityPokemon _$AbilityPokemonFromJson(Map<String, dynamic> json) =>
     AbilityPokemon(
       isHidden: json['is_hidden'] as bool,
       slot: json['slot'] as int,
-      pokemon: Pokemon.fromJson(json['pokemon'] as Map<String, dynamic>),
+      pokemon:
+          NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$AbilityPokemonToJson(AbilityPokemon instance) =>

@@ -11,8 +11,8 @@ EncounterConditionValue _$EncounterConditionValueFromJson(
     EncounterConditionValue(
       id: json['id'] as int,
       name: json['name'] as String,
-      condition: EncounterCondition.fromJson(
-          json['condition'] as Map<String, dynamic>),
+      condition:
+          NamedAPIResource.fromJson(json['condition'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

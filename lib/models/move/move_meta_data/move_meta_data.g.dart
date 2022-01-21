@@ -7,8 +7,10 @@ part of 'move_meta_data.dart';
 // **************************************************************************
 
 MoveMetaData _$MoveMetaDataFromJson(Map<String, dynamic> json) => MoveMetaData(
-      ailment: MoveAilment.fromJson(json['ailment'] as Map<String, dynamic>),
-      category: MoveCategory.fromJson(json['category'] as Map<String, dynamic>),
+      ailment:
+          NamedAPIResource.fromJson(json['ailment'] as Map<String, dynamic>),
+      category:
+          NamedAPIResource.fromJson(json['category'] as Map<String, dynamic>),
       minHits: json['min_hits'] as int,
       maxHits: json['max_hits'] as int,
       minTurns: json['min_turns'] as int,

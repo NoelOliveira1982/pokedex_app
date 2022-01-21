@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../pokemon.dart';
 import '../../version/version_encounter_detail/version_encounter_detail.dart';
 
 part 'pokemon_encounter.g.dart';
@@ -10,7 +10,7 @@ part 'pokemon_encounter.g.dart';
   explicitToJson: true,
 )
 class PokemonEncounter {
-  final Pokemon pokemon;
+  final NamedAPIResource pokemon;
   final List<VersionEncounterDetail> versionDetails;
 
   PokemonEncounter({

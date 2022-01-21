@@ -1,17 +1,12 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/description/description.dart';
-import '../../utility/egg_group/egg_group.dart';
 import '../../evolution/evolution_chain/evolution_chain.dart';
 import '../../flavor/flavor_text/flavor_text.dart';
-import '../../generation/generation.dart';
 import '../../utility/genus/genus.dart';
-import '../../growth/growth_rate.dart';
 import '../../utility/name/name.dart';
 import '../../pal_park/encounter/pal_park_encounter_area/pal_park_encounter_area.dart';
-import '../pokemon_color/pokemon_color.dart';
-import '../pokemon_habitat/pokemon_habitat.dart';
-import '../pokemon_shape/pokemon_shape.dart';
 import 'pokemon_species_dex_entry/pokemon_species_dex_entry.dart';
 import 'pokemon_species_variety/pokemon_species_variety.dart';
 
@@ -34,15 +29,15 @@ class PokemonSpecies {
   final int hatchCounter;
   final bool hasGenderDifferences;
   final bool formsSwitchable;
-  final GrowthRate growthRate;
+  final NamedAPIResource growthRate;
   final PokemonSpeciesDexEntry pokedexNumbers;
-  final EggGroup eggGroups;
-  final PokemonColor color;
-  final PokemonShape shape;
-  final PokemonSpecies evolveFromSpecies;
+  final NamedAPIResource eggGroups;
+  final NamedAPIResource color;
+  final NamedAPIResource shape;
+  final NamedAPIResource evolveFromSpecies;
   final EvolutionChain evolutionChain;
-  final PokemonHabitat habitat;
-  final Generation generation;
+  final NamedAPIResource habitat;
+  final NamedAPIResource generation;
   final List<Name> names;
   final List<PalParkEncounterArea> palParkEncounters;
   final List<FlavorText> flavorTextEntries;

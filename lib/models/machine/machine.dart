@@ -1,8 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../item/item.dart';
-import '../move/move.dart';
-import '../version/group/version_group.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'machine.g.dart';
 
@@ -12,9 +9,9 @@ part 'machine.g.dart';
 )
 class Machine {
   final int id;
-  final Item item;
-  final Move move;
-  final VersionGroup versionGroup;
+  final NamedAPIResource item;
+  final NamedAPIResource move;
+  final NamedAPIResource versionGroup;
 
   Machine(
       {required this.id,

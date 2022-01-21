@@ -1,8 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../verbose_effect/verbose_effect.dart';
-import '../../version/group/version_group.dart';
-import '../../type/type.dart';
 
 part 'past_move_stat_values.g.dart';
 
@@ -16,8 +15,8 @@ class PastMoveStatValues {
   final int power;
   final int pp;
   final List<VerboseEffect> effectEntries;
-  final Type type;
-  final VersionGroup versionGroup;
+  final NamedAPIResource type;
+  final NamedAPIResource versionGroup;
 
   PastMoveStatValues({
     required this.accuracy,

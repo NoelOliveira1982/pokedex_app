@@ -8,7 +8,8 @@ part of 'genus.dart';
 
 Genus _$GenusFromJson(Map<String, dynamic> json) => Genus(
       genus: json['genus'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$GenusToJson(Genus instance) => <String, dynamic>{

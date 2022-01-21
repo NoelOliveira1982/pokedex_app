@@ -20,20 +20,22 @@ PokemonSpecies _$PokemonSpeciesFromJson(Map<String, dynamic> json) =>
       hatchCounter: json['hatch_counter'] as int,
       hasGenderDifferences: json['has_gender_differences'] as bool,
       formsSwitchable: json['forms_switchable'] as bool,
-      growthRate:
-          GrowthRate.fromJson(json['growth_rate'] as Map<String, dynamic>),
+      growthRate: NamedAPIResource.fromJson(
+          json['growth_rate'] as Map<String, dynamic>),
       pokedexNumbers: PokemonSpeciesDexEntry.fromJson(
           json['pokedex_numbers'] as Map<String, dynamic>),
-      eggGroups: EggGroup.fromJson(json['egg_groups'] as Map<String, dynamic>),
-      color: PokemonColor.fromJson(json['color'] as Map<String, dynamic>),
-      shape: PokemonShape.fromJson(json['shape'] as Map<String, dynamic>),
-      evolveFromSpecies: PokemonSpecies.fromJson(
+      eggGroups:
+          NamedAPIResource.fromJson(json['egg_groups'] as Map<String, dynamic>),
+      color: NamedAPIResource.fromJson(json['color'] as Map<String, dynamic>),
+      shape: NamedAPIResource.fromJson(json['shape'] as Map<String, dynamic>),
+      evolveFromSpecies: NamedAPIResource.fromJson(
           json['evolve_from_species'] as Map<String, dynamic>),
       evolutionChain: EvolutionChain.fromJson(
           json['evolution_chain'] as Map<String, dynamic>),
-      habitat: PokemonHabitat.fromJson(json['habitat'] as Map<String, dynamic>),
+      habitat:
+          NamedAPIResource.fromJson(json['habitat'] as Map<String, dynamic>),
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

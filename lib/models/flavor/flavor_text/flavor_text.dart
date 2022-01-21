@@ -1,7 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../utility/language/language.dart';
-import '../../version/version.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'flavor_text.g.dart';
 
@@ -11,8 +9,8 @@ part 'flavor_text.g.dart';
 )
 class FlavorText {
   final String flavorText;
-  final Language language;
-  final Version version;
+  final NamedAPIResource language;
+  final NamedAPIResource version;
 
   FlavorText({
     required this.flavorText,

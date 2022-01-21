@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/name/name.dart';
-import '../species/pokemon_species.dart';
 
 part 'pokemon_color.g.dart';
 
@@ -13,7 +13,7 @@ class PokemonColor {
   final int id;
   final String name;
   final List<Name> names;
-  final List<PokemonSpecies> pokemonSpecies;
+  final List<NamedAPIResource> pokemonSpecies;
 
   PokemonColor({
     required this.id,

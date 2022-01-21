@@ -8,7 +8,7 @@ part of 'encounter_method_rate.dart';
 
 EncounterMethodRate _$EncounterMethodRateFromJson(Map<String, dynamic> json) =>
     EncounterMethodRate(
-      encounterMethod: EncounterMethod.fromJson(
+      encounterMethod: NamedAPIResource.fromJson(
           json['encounter_method'] as Map<String, dynamic>),
       versionDetails: EncounterVersionDetails.fromJson(
           json['version_details'] as Map<String, dynamic>),

@@ -18,7 +18,7 @@ Stat _$StatFromJson(Map<String, dynamic> json) => Stat(
       characteristics: (json['characteristics'] as List<dynamic>)
           .map((e) => Characteristic.fromJson(e as Map<String, dynamic>))
           .toList(),
-      moveDamageClass: MoveDamageClass.fromJson(
+      moveDamageClass: NamedAPIResource.fromJson(
           json['move_damage_class'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))

@@ -10,7 +10,7 @@ GenerationGameIndex _$GenerationGameIndexFromJson(Map<String, dynamic> json) =>
     GenerationGameIndex(
       gameIndex: json['game_index'] as int,
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$GenerationGameIndexToJson(

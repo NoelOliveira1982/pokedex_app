@@ -1,12 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/ability/ability.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../move/move.dart';
 import '../utility/name/name.dart';
-import '../pokemon/species/pokemon_species.dart';
-import '../utility/region/region.dart';
-import '../version/group/version_group.dart';
-import '../type/type.dart';
 
 part 'generation.g.dart';
 
@@ -17,13 +12,13 @@ part 'generation.g.dart';
 class Generation {
   final int id;
   final String name;
-  final List<Ability> abilities;
+  final List<NamedAPIResource> abilities;
   final List<Name> names;
-  final Region mainRegion;
-  final List<Move> moves;
-  final List<PokemonSpecies> pokemonSpecies;
-  final List<Type> types;
-  final List<VersionGroup> versionGroups;
+  final NamedAPIResource mainRegion;
+  final List<NamedAPIResource> moves;
+  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedAPIResource> types;
+  final List<NamedAPIResource> versionGroups;
 
   Generation({
     required this.id,

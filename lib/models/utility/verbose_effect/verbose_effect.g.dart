@@ -10,7 +10,8 @@ VerboseEffect _$VerboseEffectFromJson(Map<String, dynamic> json) =>
     VerboseEffect(
       effect: json['effect'] as String,
       shortEffect: json['short_effect'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$VerboseEffectToJson(VerboseEffect instance) =>

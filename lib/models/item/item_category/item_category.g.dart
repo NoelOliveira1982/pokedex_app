@@ -10,12 +10,12 @@ ItemCategory _$ItemCategoryFromJson(Map<String, dynamic> json) => ItemCategory(
       id: json['id'] as int,
       name: json['name'] as String,
       items: (json['items'] as List<dynamic>)
-          .map((e) => Item.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      pocket: ItemPocket.fromJson(json['pocket'] as Map<String, dynamic>),
+      pocket: NamedAPIResource.fromJson(json['pocket'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$ItemCategoryToJson(ItemCategory instance) =>

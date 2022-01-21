@@ -14,7 +14,7 @@ PokemonHabitat _$PokemonHabitatFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       pokemonSpecies: (json['pokemon_species'] as List<dynamic>)
-          .map((e) => PokemonSpecies.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

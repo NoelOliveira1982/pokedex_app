@@ -1,7 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../item.dart';
-import '../item_pocket/item_pocket.dart';
 import '../../utility/name/name.dart';
 
 part 'item_category.g.dart';
@@ -13,9 +12,9 @@ part 'item_category.g.dart';
 class ItemCategory {
   final int id;
   final String name;
-  final List<Item> items;
+  final List<NamedAPIResource> items;
   final List<Name> names;
-  final ItemPocket pocket;
+  final NamedAPIResource pocket;
 
   ItemCategory({
     required this.id,

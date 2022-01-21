@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/description/description.dart';
-import '../move.dart';
 
 part 'move_category.g.dart';
 
@@ -12,7 +12,7 @@ part 'move_category.g.dart';
 class MoveCategory {
   final int id;
   final String name;
-  final List<Move> moves;
+  final List<NamedAPIResource> moves;
   final List<Description> descriptions;
 
   MoveCategory({

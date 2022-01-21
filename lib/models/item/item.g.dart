@@ -11,12 +11,13 @@ Item _$ItemFromJson(Map<String, dynamic> json) => Item(
       name: json['name'] as String,
       cost: json['cost'] as int,
       flingPower: json['fling_power'] as int,
-      flingEffect: ItemFlingEffect.fromJson(
+      flingEffect: NamedAPIResource.fromJson(
           json['fling_effect'] as Map<String, dynamic>),
       attributes: (json['attributes'] as List<dynamic>)
-          .map((e) => ItemAttribute.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      category: ItemCategory.fromJson(json['category'] as Map<String, dynamic>),
+      category:
+          NamedAPIResource.fromJson(json['category'] as Map<String, dynamic>),
       effectEntries: (json['effect_entries'] as List<dynamic>)
           .map((e) => VerboseEffect.fromJson(e as Map<String, dynamic>))
           .toList(),

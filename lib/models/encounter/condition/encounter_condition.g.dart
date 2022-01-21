@@ -14,8 +14,7 @@ EncounterCondition _$EncounterConditionFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       values: (json['values'] as List<dynamic>)
-          .map((e) =>
-              EncounterConditionValue.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

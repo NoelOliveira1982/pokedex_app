@@ -10,7 +10,8 @@ PokemonSpeciesVariety _$PokemonSpeciesVarietyFromJson(
         Map<String, dynamic> json) =>
     PokemonSpeciesVariety(
       isDefault: json['is_default'] as bool,
-      pokemon: Pokemon.fromJson(json['pokemon'] as Map<String, dynamic>),
+      pokemon:
+          NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$PokemonSpeciesVarietyToJson(

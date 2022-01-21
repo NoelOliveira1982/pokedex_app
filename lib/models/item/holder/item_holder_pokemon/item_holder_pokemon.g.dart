@@ -8,7 +8,8 @@ part of 'item_holder_pokemon.dart';
 
 ItemHolderPokemon _$ItemHolderPokemonFromJson(Map<String, dynamic> json) =>
     ItemHolderPokemon(
-      pokemon: Pokemon.fromJson(json['pokemon'] as Map<String, dynamic>),
+      pokemon:
+          NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
       versionDetails: (json['version_details'] as List<dynamic>)
           .map((e) => ItemHolderPokemonVersionDetail.fromJson(
               e as Map<String, dynamic>))

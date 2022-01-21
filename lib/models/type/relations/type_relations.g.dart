@@ -9,22 +9,22 @@ part of 'type_relations.dart';
 TypeRelations _$TypeRelationsFromJson(Map<String, dynamic> json) =>
     TypeRelations(
       noDamageTo: (json['no_damage_to'] as List<dynamic>)
-          .map((e) => Type.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       halfDamageTo: (json['half_damage_to'] as List<dynamic>)
-          .map((e) => Type.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       doubleDamageTo: (json['double_damage_to'] as List<dynamic>)
-          .map((e) => Type.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       noDamageFrom: (json['no_damage_from'] as List<dynamic>)
-          .map((e) => Type.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       halfDamageFrom: (json['half_damage_from'] as List<dynamic>)
-          .map((e) => Type.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       doubleDamageFrom: (json['double_damage_from'] as List<dynamic>)
-          .map((e) => Type.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

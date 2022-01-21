@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../version/version.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'encounter_version_details.g.dart';
 
@@ -10,7 +9,7 @@ part 'encounter_version_details.g.dart';
 )
 class EncounterVersionDetails {
   final int rate;
-  final Version version;
+  final NamedAPIResource version;
 
   EncounterVersionDetails({
     required this.rate,

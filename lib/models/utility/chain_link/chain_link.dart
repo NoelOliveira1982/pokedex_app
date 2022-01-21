@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../evolution/evolution_detail/evolution_detail.dart';
-import '../../pokemon/species/pokemon_species.dart';
 
 part 'chain_link.g.dart';
 
@@ -11,7 +11,7 @@ part 'chain_link.g.dart';
 )
 class ChainLink {
   final bool isBaby;
-  final PokemonSpecies species;
+  final NamedAPIResource species;
   final List<EvolutionDetail> evolutionDetails;
   final List<ChainLink> evolvesTo;
 

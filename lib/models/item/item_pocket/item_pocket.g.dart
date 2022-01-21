@@ -10,7 +10,7 @@ ItemPocket _$ItemPocketFromJson(Map<String, dynamic> json) => ItemPocket(
       id: json['id'] as int,
       name: json['name'] as String,
       categories: (json['categories'] as List<dynamic>)
-          .map((e) => ItemCategory.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))

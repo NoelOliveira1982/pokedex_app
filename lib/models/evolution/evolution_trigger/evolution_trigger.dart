@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/name/name.dart';
-import '../../pokemon/species/pokemon_species.dart';
 
 part 'evolution_trigger.g.dart';
 
@@ -13,7 +13,7 @@ class EvolutionTrigger {
   final int id;
   final String name;
   final List<Name> names;
-  final List<PokemonSpecies> pokemonSpecies;
+  final List<NamedAPIResource> pokemonSpecies;
 
   EvolutionTrigger({
     required this.id,

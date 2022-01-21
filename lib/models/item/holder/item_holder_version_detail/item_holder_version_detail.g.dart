@@ -10,7 +10,8 @@ ItemHolderPokemonVersionDetail _$ItemHolderPokemonVersionDetailFromJson(
         Map<String, dynamic> json) =>
     ItemHolderPokemonVersionDetail(
       rarity: json['rarity'] as int,
-      version: Version.fromJson(json['version'] as Map<String, dynamic>),
+      version:
+          NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$ItemHolderPokemonVersionDetailToJson(

@@ -8,7 +8,8 @@ part of 'pokemon_encounter.dart';
 
 PokemonEncounter _$PokemonEncounterFromJson(Map<String, dynamic> json) =>
     PokemonEncounter(
-      pokemon: Pokemon.fromJson(json['pokemon'] as Map<String, dynamic>),
+      pokemon:
+          NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
       versionDetails: (json['version_details'] as List<dynamic>)
           .map(
               (e) => VersionEncounterDetail.fromJson(e as Map<String, dynamic>))

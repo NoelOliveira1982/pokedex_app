@@ -7,7 +7,7 @@ part of 'pokemon_stat.dart';
 // **************************************************************************
 
 PokemonStat _$PokemonStatFromJson(Map<String, dynamic> json) => PokemonStat(
-      stat: Stat.fromJson(json['stat'] as Map<String, dynamic>),
+      stat: NamedAPIResource.fromJson(json['stat'] as Map<String, dynamic>),
       effort: json['effort'] as int,
       baseStat: json['base_stat'] as int,
     );

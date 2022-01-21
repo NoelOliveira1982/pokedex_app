@@ -10,8 +10,8 @@ MachineVersionDetail _$MachineVersionDetailFromJson(
         Map<String, dynamic> json) =>
     MachineVersionDetail(
       machine: Machine.fromJson(json['machine'] as Map<String, dynamic>),
-      versionGroup:
-          VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      versionGroup: NamedAPIResource.fromJson(
+          json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$MachineVersionDetailToJson(

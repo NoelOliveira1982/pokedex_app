@@ -12,8 +12,8 @@ BerryFlavor _$BerryFlavorFromJson(Map<String, dynamic> json) => BerryFlavor(
       berries: (json['berries'] as List<dynamic>)
           .map((e) => FlavorBerryMap.fromJson(e as Map<String, dynamic>))
           .toList(),
-      contestType:
-          ContestType.fromJson(json['contest_type'] as Map<String, dynamic>),
+      contestType: NamedAPIResource.fromJson(
+          json['contest_type'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

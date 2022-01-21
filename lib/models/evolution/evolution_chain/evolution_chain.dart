@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../utility/chain_link/chain_link.dart';
-import '../../item/item.dart';
 
 part 'evolution_chain.g.dart';
 
@@ -11,7 +11,7 @@ part 'evolution_chain.g.dart';
 )
 class EvolutionChain {
   final int id;
-  final Item babyTriggerItem;
+  final NamedAPIResource babyTriggerItem;
   final ChainLink chain;
 
   EvolutionChain({

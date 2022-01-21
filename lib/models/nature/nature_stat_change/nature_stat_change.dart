@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../utility/pokeathlon/pokeathlon_stat.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'nature_stat_change.g.dart';
 
@@ -10,7 +9,7 @@ part 'nature_stat_change.g.dart';
 )
 class NatureStatChange {
   final int maxChange;
-  final PokeathlonStat pokeathlonStat;
+  final NamedAPIResource pokeathlonStat;
 
   NatureStatChange({
     required this.maxChange,

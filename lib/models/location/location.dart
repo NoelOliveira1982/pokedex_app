@@ -1,9 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../generation/generation_game_index/generation_game_index.dart';
-import 'location_area/location_area.dart';
 import '../utility/name/name.dart';
-import '../utility/region/region.dart';
 
 part 'location.g.dart';
 
@@ -14,10 +13,10 @@ part 'location.g.dart';
 class Location {
   final int id;
   final String name;
-  final Region region;
+  final NamedAPIResource region;
   final List<Name> names;
   final List<GenerationGameIndex> gameIndices;
-  final List<LocationArea> areas;
+  final List<NamedAPIResource> areas;
 
   Location({
     required this.id,

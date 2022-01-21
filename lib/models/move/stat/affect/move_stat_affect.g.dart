@@ -9,7 +9,7 @@ part of 'move_stat_affect.dart';
 MoveStatAffect _$MoveStatAffectFromJson(Map<String, dynamic> json) =>
     MoveStatAffect(
       change: json['change'] as int,
-      move: Move.fromJson(json['move'] as Map<String, dynamic>),
+      move: NamedAPIResource.fromJson(json['move'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$MoveStatAffectToJson(MoveStatAffect instance) =>

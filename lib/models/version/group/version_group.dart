@@ -1,10 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../generation/generation.dart';
-import '../../move/move_learn_method/move_learn_method.dart';
-import '../../utility/pokedex/pokedex.dart';
-import '../../utility/region/region.dart';
-import '../version.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'version_group.g.dart';
 
@@ -16,11 +11,11 @@ class VersionGroup {
   final int id;
   final String name;
   final int order;
-  final Generation generation;
-  final List<MoveLearnMethod> moveLearnMethod;
-  final List<Pokedex> pokedexes;
-  final List<Region> regions;
-  final List<Version> versions;
+  final NamedAPIResource generation;
+  final List<NamedAPIResource> moveLearnMethod;
+  final List<NamedAPIResource> pokedexes;
+  final List<NamedAPIResource> regions;
+  final List<NamedAPIResource> versions;
 
   VersionGroup({
     required this.id,

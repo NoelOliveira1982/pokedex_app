@@ -1,8 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/berry/flavor/berry_flavor.dart';
 import 'package:pokedex_app/models/move/battle_style/move_battle_style_preference/move_battle_style_preference.dart';
 import 'package:pokedex_app/models/utility/name/name.dart';
-import 'package:pokedex_app/models/utility/stat/stat.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../utility/natural/natural_stat_change.dart';
 
@@ -15,10 +14,10 @@ part 'nature.g.dart';
 class Nature {
   final int id;
   final String name;
-  final Stat decreasedStat;
-  final Stat increasedStat;
-  final BerryFlavor hatesFlavor;
-  final BerryFlavor likesFlavor;
+  final NamedAPIResource decreasedStat;
+  final NamedAPIResource increasedStat;
+  final NamedAPIResource hatesFlavor;
+  final NamedAPIResource likesFlavor;
   final List<NatureStatChange> pokeathlonStatChanges;
   final List<MoveBattleStylePreference> moveBattleStylePreferences;
   final List<Name> names;

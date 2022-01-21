@@ -1,7 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex_app/models/utility/name/name.dart';
-
-import '../berry.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'berry_firmness.g.dart';
 
@@ -12,7 +11,7 @@ part 'berry_firmness.g.dart';
 class BerryFirmness {
   final int id;
   final String name;
-  final List<Berry> berries;
+  final List<NamedAPIResource> berries;
   final List<Name> names;
 
   BerryFirmness({

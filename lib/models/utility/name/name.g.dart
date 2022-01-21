@@ -8,7 +8,8 @@ part of 'name.dart';
 
 Name _$NameFromJson(Map<String, dynamic> json) => Name(
       name: json['name'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$NameToJson(Name instance) => <String, dynamic>{

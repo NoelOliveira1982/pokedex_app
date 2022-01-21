@@ -9,7 +9,8 @@ part of 'version_game_index.dart';
 VersionGameIndex _$VersionGameIndexFromJson(Map<String, dynamic> json) =>
     VersionGameIndex(
       gameIndex: json['game_index'] as int,
-      version: Version.fromJson(json['version'] as Map<String, dynamic>),
+      version:
+          NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$VersionGameIndexToJson(VersionGameIndex instance) =>

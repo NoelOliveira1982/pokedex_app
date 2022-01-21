@@ -19,8 +19,10 @@ Pokedex _$PokedexFromJson(Map<String, dynamic> json) => Pokedex(
       (json['pokemon_entries'] as List<dynamic>)
           .map((e) => PokemonEntry.fromJson(e as Map<String, dynamic>))
           .toList(),
-      Region.fromJson(json['region'] as Map<String, dynamic>),
-      VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
+      (json['version_group'] as List<dynamic>)
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$PokedexToJson(Pokedex instance) => <String, dynamic>{
@@ -32,5 +34,5 @@ Map<String, dynamic> _$PokedexToJson(Pokedex instance) => <String, dynamic>{
       'pokemon_entries':
           instance.pokemonEntries.map((e) => e.toJson()).toList(),
       'region': instance.region.toJson(),
-      'version_group': instance.versionGroup.toJson(),
+      'version_group': instance.versionGroup.map((e) => e.toJson()).toList(),
     };

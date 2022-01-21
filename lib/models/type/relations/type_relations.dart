@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../type.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'type_relations.g.dart';
 
@@ -9,22 +8,23 @@ part 'type_relations.g.dart';
   explicitToJson: true,
 )
 class TypeRelations {
-  final List<Type> noDamageTo;
-  final List<Type> halfDamageTo;
-  final List<Type> doubleDamageTo;
-  final List<Type> noDamageFrom;
-  final List<Type> halfDamageFrom;
-  final List<Type> doubleDamageFrom;
+  final List<NamedAPIResource> noDamageTo;
+  final List<NamedAPIResource> halfDamageTo;
+  final List<NamedAPIResource> doubleDamageTo;
+  final List<NamedAPIResource> noDamageFrom;
+  final List<NamedAPIResource> halfDamageFrom;
+  final List<NamedAPIResource> doubleDamageFrom;
 
-  TypeRelations(
-      {required this.noDamageTo,
-      required this.halfDamageTo,
-      required this.doubleDamageTo,
-      required this.noDamageFrom,
-      required this.halfDamageFrom,
-      required this.doubleDamageFrom,});
+  TypeRelations({
+    required this.noDamageTo,
+    required this.halfDamageTo,
+    required this.doubleDamageTo,
+    required this.noDamageFrom,
+    required this.halfDamageFrom,
+    required this.doubleDamageFrom,
+  });
 
-        factory TypeRelations.fromJson(Map<String, dynamic> json) =>
+  factory TypeRelations.fromJson(Map<String, dynamic> json) =>
       _$TypeRelationsFromJson(json);
 
   Map<String, dynamic> toJson() => _$TypeRelationsToJson(this);

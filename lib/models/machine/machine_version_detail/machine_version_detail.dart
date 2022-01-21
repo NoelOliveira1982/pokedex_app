@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../machine.dart';
-import '../../version/group/version_group.dart';
 
 part 'machine_version_detail.g.dart';
 
@@ -11,7 +11,7 @@ part 'machine_version_detail.g.dart';
 )
 class MachineVersionDetail {
   final Machine machine;
-  final VersionGroup versionGroup;
+  final NamedAPIResource versionGroup;
 
   MachineVersionDetail({
     required this.machine,

@@ -10,7 +10,7 @@ MoveAilment _$MoveAilmentFromJson(Map<String, dynamic> json) => MoveAilment(
       id: json['id'] as int,
       name: json['name'] as String,
       moves: (json['moves'] as List<dynamic>)
-          .map((e) => Move.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))

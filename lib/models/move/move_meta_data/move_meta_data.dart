@@ -1,7 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../move_ailment/move_ailment.dart';
-import '../move_category/move_category.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'move_meta_data.g.dart';
 
@@ -10,8 +8,8 @@ part 'move_meta_data.g.dart';
   explicitToJson: true,
 )
 class MoveMetaData {
-  final MoveAilment ailment;
-  final MoveCategory category;
+  final NamedAPIResource ailment;
+  final NamedAPIResource category;
   final int minHits;
   final int maxHits;
   final int minTurns;

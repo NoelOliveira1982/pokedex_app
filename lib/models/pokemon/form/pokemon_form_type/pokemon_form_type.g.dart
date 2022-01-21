@@ -9,7 +9,7 @@ part of 'pokemon_form_type.dart';
 PokemonFormType _$PokemonFormTypeFromJson(Map<String, dynamic> json) =>
     PokemonFormType(
       slot: json['slot'] as int,
-      type: Type.fromJson(json['type'] as Map<String, dynamic>),
+      type: NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$PokemonFormTypeToJson(PokemonFormType instance) =>

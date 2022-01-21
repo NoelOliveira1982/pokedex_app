@@ -15,9 +15,9 @@ PastMoveStatValues _$PastMoveStatValuesFromJson(Map<String, dynamic> json) =>
       effectEntries: (json['effect_entries'] as List<dynamic>)
           .map((e) => VerboseEffect.fromJson(e as Map<String, dynamic>))
           .toList(),
-      type: Type.fromJson(json['type'] as Map<String, dynamic>),
-      versionGroup:
-          VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      type: NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
+      versionGroup: NamedAPIResource.fromJson(
+          json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$PastMoveStatValuesToJson(PastMoveStatValues instance) =>

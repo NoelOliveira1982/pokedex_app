@@ -8,7 +8,7 @@ part of 'pokemon_entry.dart';
 
 PokemonEntry _$PokemonEntryFromJson(Map<String, dynamic> json) => PokemonEntry(
       entryNumber: json['entry_number'] as int,
-      pokemonSpecies: PokemonSpecies.fromJson(
+      pokemonSpecies: NamedAPIResource.fromJson(
           json['pokemon_species'] as Map<String, dynamic>),
     );
 

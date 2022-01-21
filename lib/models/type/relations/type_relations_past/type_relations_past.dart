@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../../../generation/generation.dart';
 import '../type_relations.dart';
 
 part 'type_relations_past.g.dart';
@@ -10,7 +10,7 @@ part 'type_relations_past.g.dart';
   explicitToJson: true,
 )
 class TypeRelationsPast {
-  final Generation generation;
+  final NamedAPIResource generation;
   final TypeRelations damageRelations;
 
   TypeRelationsPast({

@@ -10,7 +10,8 @@ EncounterVersionDetails _$EncounterVersionDetailsFromJson(
         Map<String, dynamic> json) =>
     EncounterVersionDetails(
       rate: json['rate'] as int,
-      version: Version.fromJson(json['version'] as Map<String, dynamic>),
+      version:
+          NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$EncounterVersionDetailsToJson(

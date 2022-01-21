@@ -1,7 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex_app/models/nature/nature_stat_affect_sets/nature_stat_affect_sets.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../characteristic/characteristic.dart';
+// ignore: unused_import
 import '../../move/move_damage_class/move_damage_class.dart';
 import '../../move/stat/affect/move_stat_affect_sets/move_stat_affect_sets.dart';
 import '../name/name.dart';
@@ -20,7 +22,7 @@ class Stat {
   final MoveStatAffectSets affectingMoves;
   final NatureStatAffectSets affectingNatures;
   final List<Characteristic> characteristics;
-  final MoveDamageClass moveDamageClass;
+  final NamedAPIResource moveDamageClass;
   final List<Name> names;
 
   Stat({

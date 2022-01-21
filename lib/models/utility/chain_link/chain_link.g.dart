@@ -8,7 +8,8 @@ part of 'chain_link.dart';
 
 ChainLink _$ChainLinkFromJson(Map<String, dynamic> json) => ChainLink(
       isBaby: json['is_baby'] as bool,
-      species: PokemonSpecies.fromJson(json['species'] as Map<String, dynamic>),
+      species:
+          NamedAPIResource.fromJson(json['species'] as Map<String, dynamic>),
       evolutionDetails: (json['evolution_details'] as List<dynamic>)
           .map((e) => EvolutionDetail.fromJson(e as Map<String, dynamic>))
           .toList(),

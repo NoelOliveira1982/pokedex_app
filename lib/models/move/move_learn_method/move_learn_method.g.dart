@@ -16,7 +16,7 @@ MoveLearnMethod _$MoveLearnMethodFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       versionGroups: (json['version_groups'] as List<dynamic>)
-          .map((e) => VersionGroup.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

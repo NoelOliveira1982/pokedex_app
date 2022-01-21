@@ -9,7 +9,7 @@ part of 'nature_stat_change.dart';
 NatureStatChange _$NatureStatChangeFromJson(Map<String, dynamic> json) =>
     NatureStatChange(
       maxChange: json['max_change'] as int,
-      pokeathlonStat: PokeathlonStat.fromJson(
+      pokeathlonStat: NamedAPIResource.fromJson(
           json['pokeathlon_stat'] as Map<String, dynamic>),
     );
 

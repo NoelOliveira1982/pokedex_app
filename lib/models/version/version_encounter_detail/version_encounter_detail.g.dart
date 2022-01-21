@@ -9,7 +9,8 @@ part of 'version_encounter_detail.dart';
 VersionEncounterDetail _$VersionEncounterDetailFromJson(
         Map<String, dynamic> json) =>
     VersionEncounterDetail(
-      version: Version.fromJson(json['version'] as Map<String, dynamic>),
+      version:
+          NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
       maxChance: json['max_chance'] as int,
       encounterDetails: (json['encounter_details'] as List<dynamic>)
           .map((e) => Encounter.fromJson(e as Map<String, dynamic>))

@@ -11,7 +11,7 @@ Ability _$AbilityFromJson(Map<String, dynamic> json) => Ability(
       name: json['name'] as String,
       isMainSeries: json['is_main_series'] as bool,
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

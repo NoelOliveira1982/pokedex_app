@@ -1,10 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../../generation/generation.dart';
-import '../../location/location.dart';
 import '../name/name.dart';
-import '../pokedex/pokedex.dart';
-import '../../version/group/version_group.dart';
 
 part 'region.g.dart';
 
@@ -14,12 +11,12 @@ part 'region.g.dart';
 )
 class Region {
   final int id;
-  final Location locations;
+  final List<NamedAPIResource> locations;
   final String name;
   final List<Name> names;
-  final Generation mainGeneration;
-  final Pokedex pokedexes;
-  final VersionGroup versionGroup;
+  final NamedAPIResource mainGeneration;
+  final List<NamedAPIResource> pokedexes;
+  final List<NamedAPIResource> versionGroup;
 
   Region({
     required this.id,

@@ -8,7 +8,8 @@ part of 'description.dart';
 
 Description _$DescriptionFromJson(Map<String, dynamic> json) => Description(
       description: json['description'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$DescriptionToJson(Description instance) =>

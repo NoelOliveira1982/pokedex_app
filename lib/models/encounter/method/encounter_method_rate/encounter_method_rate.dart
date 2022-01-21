@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/encounter/method/encounter_method.dart';
 import 'package:pokedex_app/models/encounter/encounter_version_detail/encounter_version_details.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'encounter_method_rate.g.dart';
 
@@ -9,7 +9,7 @@ part 'encounter_method_rate.g.dart';
   explicitToJson: true,
 )
 class EncounterMethodRate {
-  final EncounterMethod encounterMethod;
+  final NamedAPIResource encounterMethod;
   final EncounterVersionDetails versionDetails;
 
   EncounterMethodRate({

@@ -9,14 +9,14 @@ part of 'nature.dart';
 Nature _$NatureFromJson(Map<String, dynamic> json) => Nature(
       id: json['id'] as int,
       name: json['name'] as String,
-      decreasedStat:
-          Stat.fromJson(json['decreased_stat'] as Map<String, dynamic>),
-      increasedStat:
-          Stat.fromJson(json['increased_stat'] as Map<String, dynamic>),
-      hatesFlavor:
-          BerryFlavor.fromJson(json['hates_flavor'] as Map<String, dynamic>),
-      likesFlavor:
-          BerryFlavor.fromJson(json['likes_flavor'] as Map<String, dynamic>),
+      decreasedStat: NamedAPIResource.fromJson(
+          json['decreased_stat'] as Map<String, dynamic>),
+      increasedStat: NamedAPIResource.fromJson(
+          json['increased_stat'] as Map<String, dynamic>),
+      hatesFlavor: NamedAPIResource.fromJson(
+          json['hates_flavor'] as Map<String, dynamic>),
+      likesFlavor: NamedAPIResource.fromJson(
+          json['likes_flavor'] as Map<String, dynamic>),
       pokeathlonStatChanges: (json['pokeathlon_stat_changes'] as List<dynamic>)
           .map((e) => NatureStatChange.fromJson(e as Map<String, dynamic>))
           .toList(),

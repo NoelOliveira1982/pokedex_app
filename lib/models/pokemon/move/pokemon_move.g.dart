@@ -7,7 +7,7 @@ part of 'pokemon_move.dart';
 // **************************************************************************
 
 PokemonMove _$PokemonMoveFromJson(Map<String, dynamic> json) => PokemonMove(
-      move: Move.fromJson(json['move'] as Map<String, dynamic>),
+      move: NamedAPIResource.fromJson(json['move'] as Map<String, dynamic>),
       versionGroupDetails: (json['version_group_details'] as List<dynamic>)
           .map((e) => PokemonMoveVersion.fromJson(e as Map<String, dynamic>))
           .toList(),

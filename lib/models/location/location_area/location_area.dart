@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex_app/models/encounter/method/encounter_method_rate/encounter_method_rate.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
-import '../location.dart';
 import '../../utility/name/name.dart';
 import '../../pokemon/pokemon_encounter/pokemon_encounter.dart';
 
@@ -16,7 +16,7 @@ class LocationArea {
   final String name;
   final int gameIndex;
   final List<EncounterMethodRate> encounterMethodRates;
-  final Location location;
+  final NamedAPIResource location;
   final List<Name> names;
   final List<PokemonEncounter> pokemonEncounters;
 

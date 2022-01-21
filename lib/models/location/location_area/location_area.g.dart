@@ -13,7 +13,8 @@ LocationArea _$LocationAreaFromJson(Map<String, dynamic> json) => LocationArea(
       encounterMethodRates: (json['encounter_method_rates'] as List<dynamic>)
           .map((e) => EncounterMethodRate.fromJson(e as Map<String, dynamic>))
           .toList(),
-      location: Location.fromJson(json['location'] as Map<String, dynamic>),
+      location:
+          NamedAPIResource.fromJson(json['location'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

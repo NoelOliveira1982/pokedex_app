@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../nature.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'nature_stat_affect_sets.g.dart';
 
@@ -9,8 +8,8 @@ part 'nature_stat_affect_sets.g.dart';
   explicitToJson: true,
 )
 class NatureStatAffectSets {
-  final Nature increase;
-  final Nature decrease;
+  final List<NamedAPIResource> increase;
+  final List<NamedAPIResource> decrease;
 
   NatureStatAffectSets({
     required this.increase,

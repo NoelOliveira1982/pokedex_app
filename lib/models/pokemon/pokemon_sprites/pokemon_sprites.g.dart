@@ -8,14 +8,14 @@ part of 'pokemon_sprites.dart';
 
 PokemonSprites _$PokemonSpritesFromJson(Map<String, dynamic> json) =>
     PokemonSprites(
-      frontDefault: json['front_default'] as String,
-      frontShiny: json['front_shiny'] as String,
-      frontFemale: json['front_female'] as String,
-      frontShinyFemale: json['front_shiny_female'] as String,
-      backDefault: json['back_default'] as String,
-      backShiny: json['back_shiny'] as String,
-      backFemale: json['back_female'] as String,
-      backShinyFemale: json['back_shiny_female'] as String,
+      frontDefault: json['front_default'] as String?,
+      frontShiny: json['front_shiny'] as String?,
+      frontFemale: json['front_female'] as String?,
+      frontShinyFemale: json['front_shiny_female'] as String?,
+      backDefault: json['back_default'] as String?,
+      backShiny: json['back_shiny'] as String?,
+      backFemale: json['back_female'] as String?,
+      backShinyFemale: json['back_shiny_female'] as String?,
     );
 
 Map<String, dynamic> _$PokemonSpritesToJson(PokemonSprites instance) =>

@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../generation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'generation_game_index.g.dart';
 
@@ -10,7 +9,7 @@ part 'generation_game_index.g.dart';
 )
 class GenerationGameIndex {
   final int gameIndex;
-  final Generation generation;
+  final NamedAPIResource generation;
 
   GenerationGameIndex({
     required this.gameIndex,

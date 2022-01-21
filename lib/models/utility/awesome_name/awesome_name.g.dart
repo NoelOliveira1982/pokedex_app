@@ -8,7 +8,8 @@ part of 'awesome_name.dart';
 
 AwesomeName _$AwesomeNameFromJson(Map<String, dynamic> json) => AwesomeName(
       awesomeName: json['awesome_name'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$AwesomeNameToJson(AwesomeName instance) =>

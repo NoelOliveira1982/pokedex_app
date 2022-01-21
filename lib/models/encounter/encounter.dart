@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/encounter/condition/encounter_condition_value/encounter_condition_value.dart';
-import 'package:pokedex_app/models/encounter/method/encounter_method.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'encounter.g.dart';
 
@@ -11,9 +10,9 @@ part 'encounter.g.dart';
 class Encounter {
   final int minLevel;
   final int maxLevel;
-  final List<EncounterConditionValue> conditionValues;
+  final List<NamedAPIResource> conditionValues;
   final int chance;
-  final EncounterMethod method;
+  final NamedAPIResource method;
 
   Encounter({
     required this.minLevel,

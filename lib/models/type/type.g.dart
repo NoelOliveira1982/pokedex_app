@@ -18,8 +18,8 @@ Type _$TypeFromJson(Map<String, dynamic> json) => Type(
           .map((e) => GenerationGameIndex.fromJson(e as Map<String, dynamic>))
           .toList(),
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
-      moveDamageClass: MoveDamageClass.fromJson(
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
+      moveDamageClass: NamedAPIResource.fromJson(
           json['move_damage_class'] as Map<String, dynamic>),
       names: (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
@@ -28,7 +28,7 @@ Type _$TypeFromJson(Map<String, dynamic> json) => Type(
           .map((e) => TypePokemon.fromJson(e as Map<String, dynamic>))
           .toList(),
       moves: (json['moves'] as List<dynamic>)
-          .map((e) => Move.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

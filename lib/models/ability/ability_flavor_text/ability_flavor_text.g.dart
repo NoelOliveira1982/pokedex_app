@@ -9,9 +9,10 @@ part of 'ability_flavor_text.dart';
 AbilityFlavorText _$AbilityFlavorTextFromJson(Map<String, dynamic> json) =>
     AbilityFlavorText(
       flavorText: json['flavor_text'] as String,
-      language: Language.fromJson(json['language'] as Map<String, dynamic>),
-      versionGroup:
-          VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      language:
+          NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
+      versionGroup: NamedAPIResource.fromJson(
+          json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$AbilityFlavorTextToJson(AbilityFlavorText instance) =>

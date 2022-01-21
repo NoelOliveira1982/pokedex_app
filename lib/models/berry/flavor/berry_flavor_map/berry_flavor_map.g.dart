@@ -9,7 +9,7 @@ part of 'berry_flavor_map.dart';
 BerryFlavorMap _$BerryFlavorMapFromJson(Map<String, dynamic> json) =>
     BerryFlavorMap(
       potency: json['potency'] as int,
-      flavor: BerryFlavor.fromJson(json['flavor'] as Map<String, dynamic>),
+      flavor: NamedAPIResource.fromJson(json['flavor'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$BerryFlavorMapToJson(BerryFlavorMap instance) =>

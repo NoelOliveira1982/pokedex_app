@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/generation/generation.dart';
 import 'package:pokedex_app/models/utility/name/name.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 import 'package:pokedex_app/models/utility/verbose_effect/verbose_effect.dart';
 
 import 'ability_effect_change/ability_effect_change.dart';
@@ -17,7 +17,7 @@ class Ability {
   final int id;
   final String name;
   final bool isMainSeries;
-  final Generation generation;
+  final NamedAPIResource generation;
   final List<Name> names;
   final List<VerboseEffect> effectEntries;
   final List<AbilityEffectChange> effectChanges;

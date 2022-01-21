@@ -1,10 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../evolution/evolution_chain/evolution_chain.dart';
 import '../generation/generation_game_index/generation_game_index.dart';
-import 'item_attribute/item_attribute.dart';
-import 'item_category/item_category.dart';
-import 'item_fling_effect/item_fling_effect.dart';
 import 'holder/item_holder_pokemon/item_holder_pokemon.dart';
 import 'item_sprites/item_sprites.dart';
 import '../machine/machine_version_detail/machine_version_detail.dart';
@@ -23,9 +21,9 @@ class Item {
   final String name;
   final int cost;
   final int flingPower;
-  final ItemFlingEffect flingEffect;
-  final List<ItemAttribute> attributes;
-  final ItemCategory category;
+  final NamedAPIResource flingEffect;
+  final List<NamedAPIResource> attributes;
+  final NamedAPIResource category;
   final List<VerboseEffect> effectEntries;
   final List<VersionGroupFlavorText> flavorTextEntries;
   final List<GenerationGameIndex> gameIndices;

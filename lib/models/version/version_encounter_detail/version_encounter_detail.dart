@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 import '../../encounter/encounter.dart';
-import '../version.dart';
 
 part 'version_encounter_detail.g.dart';
 
@@ -10,7 +10,7 @@ part 'version_encounter_detail.g.dart';
   explicitToJson: true,
 )
 class VersionEncounterDetail {
-  final Version version;
+  final NamedAPIResource version;
   final int maxChance;
   final List<Encounter> encounterDetails;
 

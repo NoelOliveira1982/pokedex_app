@@ -14,7 +14,7 @@ ItemFlingEffect _$ItemFlingEffectFromJson(Map<String, dynamic> json) =>
           .map((e) => Effect.fromJson(e as Map<String, dynamic>))
           .toList(),
       items: (json['items'] as List<dynamic>)
-          .map((e) => Item.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

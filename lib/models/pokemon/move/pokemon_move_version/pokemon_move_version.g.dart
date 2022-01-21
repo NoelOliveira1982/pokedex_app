@@ -8,10 +8,10 @@ part of 'pokemon_move_version.dart';
 
 PokemonMoveVersion _$PokemonMoveVersionFromJson(Map<String, dynamic> json) =>
     PokemonMoveVersion(
-      moveLearnMethod: MoveLearnMethod.fromJson(
+      moveLearnMethod: NamedAPIResource.fromJson(
           json['move_learn_method'] as Map<String, dynamic>),
-      versionGroup:
-          VersionGroup.fromJson(json['version_group'] as Map<String, dynamic>),
+      versionGroup: NamedAPIResource.fromJson(
+          json['version_group'] as Map<String, dynamic>),
       levelLearnedAt: json['level_learned_at'] as int,
     );
 

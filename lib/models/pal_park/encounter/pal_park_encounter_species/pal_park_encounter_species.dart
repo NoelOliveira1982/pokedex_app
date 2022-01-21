@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../../pokemon/species/pokemon_species.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pal_park_encounter_species.g.dart';
 
@@ -11,7 +10,7 @@ part 'pal_park_encounter_species.g.dart';
 class PalParkEncounterSpecies {
   final int baseScore;
   final int rate;
-  final PokemonSpecies pokemonSpecies;
+  final NamedAPIResource pokemonSpecies;
 
   PalParkEncounterSpecies({
     required this.baseScore,

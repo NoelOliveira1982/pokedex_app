@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex_app/models/encounter/condition/encounter_condition.dart';
 import 'package:pokedex_app/models/utility/name/name.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'encounter_condition_value.g.dart';
 
@@ -11,7 +11,7 @@ part 'encounter_condition_value.g.dart';
 class EncounterConditionValue {
   final int id;
   final String name;
-  final EncounterCondition condition;
+  final NamedAPIResource condition;
   final List<Name> names;
 
   EncounterConditionValue({

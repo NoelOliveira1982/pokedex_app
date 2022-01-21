@@ -11,18 +11,18 @@ VersionGroup _$VersionGroupFromJson(Map<String, dynamic> json) => VersionGroup(
       name: json['name'] as String,
       order: json['order'] as int,
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       moveLearnMethod: (json['move_learn_method'] as List<dynamic>)
-          .map((e) => MoveLearnMethod.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       pokedexes: (json['pokedexes'] as List<dynamic>)
-          .map((e) => Pokedex.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       regions: (json['regions'] as List<dynamic>)
-          .map((e) => Region.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       versions: (json['versions'] as List<dynamic>)
-          .map((e) => Version.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

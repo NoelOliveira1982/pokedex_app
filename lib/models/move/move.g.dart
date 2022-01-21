@@ -16,11 +16,11 @@ Move _$MoveFromJson(Map<String, dynamic> json) => Move(
       power: json['power'] as int,
       contesCombos: ContestComboSets.fromJson(
           json['contes_combos'] as Map<String, dynamic>),
-      contestType:
-          ContestType.fromJson(json['contest_type'] as Map<String, dynamic>),
+      contestType: NamedAPIResource.fromJson(
+          json['contest_type'] as Map<String, dynamic>),
       contestEffect: ContestEffect.fromJson(
           json['contest_effect'] as Map<String, dynamic>),
-      damageClass: MoveDamageClass.fromJson(
+      damageClass: NamedAPIResource.fromJson(
           json['damage_class'] as Map<String, dynamic>),
       effectEntries: (json['effect_entries'] as List<dynamic>)
           .map((e) => VerboseEffect.fromJson(e as Map<String, dynamic>))
@@ -28,13 +28,13 @@ Move _$MoveFromJson(Map<String, dynamic> json) => Move(
       effectChanges: (json['effect_changes'] as List<dynamic>)
           .map((e) => AbilityEffectChange.fromJson(e as Map<String, dynamic>))
           .toList(),
-      learnedByPokemon:
-          Pokemon.fromJson(json['learned_by_pokemon'] as Map<String, dynamic>),
+      learnedByPokemon: NamedAPIResource.fromJson(
+          json['learned_by_pokemon'] as Map<String, dynamic>),
       flavorTextEntries: (json['flavor_text_entries'] as List<dynamic>)
           .map((e) => MoveFlavorText.fromJson(e as Map<String, dynamic>))
           .toList(),
       generation:
-          Generation.fromJson(json['generation'] as Map<String, dynamic>),
+          NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       machines: (json['machines'] as List<dynamic>)
           .map((e) => MachineVersionDetail.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -50,8 +50,8 @@ Move _$MoveFromJson(Map<String, dynamic> json) => Move(
           .toList(),
       superContestEffect: SuperContestEffect.fromJson(
           json['super_contest_effect'] as Map<String, dynamic>),
-      target: MoveTarget.fromJson(json['target'] as Map<String, dynamic>),
-      type: Type.fromJson(json['type'] as Map<String, dynamic>),
+      target: NamedAPIResource.fromJson(json['target'] as Map<String, dynamic>),
+      type: NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$MoveToJson(Move instance) => <String, dynamic>{
