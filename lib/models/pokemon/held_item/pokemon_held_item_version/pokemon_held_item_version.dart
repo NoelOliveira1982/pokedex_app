@@ -1,6 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../../version/version.dart';
+import 'package:pokedex_app/models/utility/named_api_resource/named_api_resource.dart';
 
 part 'pokemon_held_item_version.g.dart';
 
@@ -9,7 +8,7 @@ part 'pokemon_held_item_version.g.dart';
   explicitToJson: true,
 )
 class PokemonHeldItemVersion {
-  final Version version;
+  final NamedAPIResource version;
   final int rarity;
 
   PokemonHeldItemVersion({

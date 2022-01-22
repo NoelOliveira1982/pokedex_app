@@ -11,7 +11,7 @@ part 'pokemon_held_item.g.dart';
 )
 class PokemonHeldItem {
   final NamedAPIResource item;
-  final PokemonHeldItemVersion versionDetails;
+  final List<PokemonHeldItemVersion> versionDetails;
 
   PokemonHeldItem({
     required this.item,
