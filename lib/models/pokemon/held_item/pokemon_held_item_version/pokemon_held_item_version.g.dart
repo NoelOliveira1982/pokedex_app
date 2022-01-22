@@ -9,7 +9,8 @@ part of 'pokemon_held_item_version.dart';
 PokemonHeldItemVersion _$PokemonHeldItemVersionFromJson(
         Map<String, dynamic> json) =>
     PokemonHeldItemVersion(
-      version: Version.fromJson(json['version'] as Map<String, dynamic>),
+      version:
+          NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
       rarity: json['rarity'] as int,
     );
 
