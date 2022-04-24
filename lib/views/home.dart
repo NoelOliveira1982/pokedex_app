@@ -67,7 +67,6 @@ class Home extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 25, bottom: 15),
                     child: SearchBar(
-                      onSave: () {},
                       text: 'What Pokemon are you looking for?',
                     ),
                   ),
@@ -125,6 +124,4 @@ class Home extends StatelessWidget {
   getSortOptions() {}
 
   getFilterOptions() {}
-
-  onSave() {}
 }

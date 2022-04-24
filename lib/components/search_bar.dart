@@ -5,8 +5,7 @@ import 'package:pokedex_app/styles/texts.dart';
 class SearchBar extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
   final String text;
-  final Function onSave;
-  SearchBar({Key? key, this.text = '', required this.onSave}) : super(key: key);
+  SearchBar({Key? key, this.text = ''}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
